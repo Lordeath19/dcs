@@ -30,6 +30,7 @@ class PERRY(unittype.ShipType):
     detection_range = 150000
     threat_range = 100000
     air_weapon_dist = 100000
+    munition_interceptor = True
 
 
 class TICONDEROG(unittype.ShipType):
@@ -40,6 +41,7 @@ class TICONDEROG(unittype.ShipType):
     detection_range = 150000
     threat_range = 100000
     air_weapon_dist = 100000
+    munition_interceptor = True
 
 
 class ALBATROS(unittype.ShipType):
@@ -59,6 +61,7 @@ class KUZNECOW(unittype.ShipType):
     detection_range = 25000
     threat_range = 12000
     air_weapon_dist = 12000
+    munition_interceptor = True
 
 
 class MOLNIYA(unittype.ShipType):
@@ -77,6 +80,7 @@ class MOSCOW(unittype.ShipType):
     detection_range = 160000
     threat_range = 75000
     air_weapon_dist = 75000
+    munition_interceptor = True
 
 
 class NEUSTRASH(unittype.ShipType):
@@ -87,6 +91,7 @@ class NEUSTRASH(unittype.ShipType):
     detection_range = 27000
     threat_range = 12000
     air_weapon_dist = 12000
+    munition_interceptor = True
 
 
 class PIOTR(unittype.ShipType):
@@ -97,6 +102,7 @@ class PIOTR(unittype.ShipType):
     detection_range = 250000
     threat_range = 190000
     air_weapon_dist = 190000
+    munition_interceptor = True
 
 
 class REZKY(unittype.ShipType):
@@ -172,6 +178,7 @@ class CV_1143_5(unittype.ShipType):
     detection_range = 25000
     threat_range = 12000
     air_weapon_dist = 12000
+    munition_interceptor = True
 
 
 class CastleClass_01(unittype.ShipType):
@@ -371,6 +378,7 @@ class USS_Arleigh_Burke_IIa(unittype.ShipType):
     detection_range = 150000
     threat_range = 100000
     air_weapon_dist = 100000
+    munition_interceptor = True
 
 
 class LHA_Tarawa(unittype.ShipType):
@@ -393,6 +401,7 @@ class Type_052B(unittype.ShipType):
     detection_range = 100000
     threat_range = 30000
     air_weapon_dist = 30000
+    munition_interceptor = True
 
 
 class Type_054A(unittype.ShipType):
@@ -404,6 +413,7 @@ class Type_054A(unittype.ShipType):
     detection_range = 160000
     threat_range = 45000
     air_weapon_dist = 45000
+    munition_interceptor = True
 
 
 class Type_052C(unittype.ShipType):
@@ -415,6 +425,7 @@ class Type_052C(unittype.ShipType):
     detection_range = 260000
     threat_range = 100000
     air_weapon_dist = 100000
+    munition_interceptor = True
 
 
 class Type_093(unittype.ShipType):
