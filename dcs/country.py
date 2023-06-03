@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
 from dcs.unitgroup import VehicleGroup, ShipGroup, PlaneGroup, StaticGroup, HelicopterGroup, FlyingGroup, Group
@@ -214,5 +216,13 @@ class Country:
                 i += 1
         return d
 
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Country):
+            return False
+        return self.id == other.id
+
     def __str__(self):
         return str(self.id) + "," + self.name + "," + str(self.vehicle_group)
+
+    def __hash__(self) -> int:
+        return hash(self.id)

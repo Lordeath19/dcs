@@ -4,7 +4,6 @@ from typing import Any, Dict, List, Set
 from dcs.weapons_data import Weapons
 import dcs.task as task
 from dcs.unittype import FlyingType
-from dcs.liveries_scanner import Liveries
 
 
 class PlaneType(FlyingType):
@@ -26,7 +25,6 @@ class Tornado_GR4(PlaneType):
     eplrs = True
 
     livery_name = "TORNADO GR4"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         BOZ_107___Countermeasure_Dispenser = (1, Weapons.BOZ_107___Countermeasure_Dispenser)
@@ -108,7 +106,6 @@ class Tornado_IDS(PlaneType):
     eplrs = True
 
     livery_name = "TORNADO IDS"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         BOZ_107___Countermeasure_Dispenser = (1, Weapons.BOZ_107___Countermeasure_Dispenser)
@@ -185,7 +182,6 @@ class F_A_18A(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "F_A-18A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
@@ -355,7 +351,6 @@ class F_A_18C(PlaneType):
     }
 
     livery_name = "F_A-18C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9L_Sidewinder_IR_AAM = (1, Weapons.AIM_9L_Sidewinder_IR_AAM)
@@ -559,7 +554,6 @@ class F_14A(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "F-14A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AN_ASQ_T50_TCTS_Pod___ACMI_Pod = (1, Weapons.AN_ASQ_T50_TCTS_Pod___ACMI_Pod)
@@ -628,7 +622,6 @@ class Tu_22M3(PlaneType):
     flare_charge_size = 1
 
     livery_name = "TU-22M3"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Kh_22__AS_4_Kitchen____1000kg__AShM__IN__Act_Pas_Rdr = (1, Weapons.Kh_22__AS_4_Kitchen____1000kg__AShM__IN__Act_Pas_Rdr)
@@ -670,7 +663,6 @@ class F_4E(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "F-4E"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         GBU_10___2000lb_Laser_Guided_Bomb = (1, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -783,7 +775,6 @@ class B_52H(PlaneType):
     }
 
     livery_name = "B-52H"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         MER12_with_12_x_Mk_82___500lb_GP_Bombs_LD = (1, Weapons.MER12_with_12_x_Mk_82___500lb_GP_Bombs_LD)
@@ -824,7 +815,6 @@ class MiG_27K(PlaneType):
     flare_charge_size = 1
 
     livery_name = "MIG-27K"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon2:
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (2, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
@@ -833,7 +823,7 @@ class MiG_27K(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_ = (2, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_ = (2, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (2, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (2, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (2, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
@@ -854,7 +844,7 @@ class MiG_27K(PlaneType):
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (3, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red = (3, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
 
     class Pylon4:
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
@@ -875,7 +865,7 @@ class MiG_27K(PlaneType):
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (7, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_ = (7, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (7, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
 
     class Pylon8:
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
@@ -884,7 +874,7 @@ class MiG_27K(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_ = (8, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_ = (8, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided_)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (8, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (8, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
@@ -924,7 +914,6 @@ class Su_27(PlaneType):
     radio_frequency = 127.5
 
     livery_name = "SU-27"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_73__AA_11_Archer____Infra_Red = (1, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -964,12 +953,12 @@ class Su_27(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (3, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
         Smoke_Generator___red = (3, Weapons.Smoke_Generator___red)
@@ -981,9 +970,9 @@ class Su_27(PlaneType):
         _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (3, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
         _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
         _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons._2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
-        _2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons._2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        _2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP = (3, Weapons._2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
 
     class Pylon4:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (4, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -1000,7 +989,7 @@ class Su_27(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (4, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (4, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (4, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_5_x_FAB_250___250kg_GP_Bombs_LD = (4, Weapons.MBD3_U6_68_with_5_x_FAB_250___250kg_GP_Bombs_LD)
         Smoke_Generator___red = (4, Weapons.Smoke_Generator___red)
@@ -1023,7 +1012,7 @@ class Su_27(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (5, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (5, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (5, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (5, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD = (5, Weapons.MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD)
         Smoke_Generator___red = (5, Weapons.Smoke_Generator___red)
@@ -1048,7 +1037,7 @@ class Su_27(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (6, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (6, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (6, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
 
@@ -1067,7 +1056,7 @@ class Su_27(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (7, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (7, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (7, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (7, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_5_x_FAB_250___250kg_GP_Bombs_LD = (7, Weapons.MBD3_U6_68_with_5_x_FAB_250___250kg_GP_Bombs_LD)
         Smoke_Generator___red = (7, Weapons.Smoke_Generator___red)
@@ -1096,12 +1085,12 @@ class Su_27(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (8, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (8, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (8, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
         Smoke_Generator___red = (8, Weapons.Smoke_Generator___red)
@@ -1113,9 +1102,9 @@ class Su_27(PlaneType):
         _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (8, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
         _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
         _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons._2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
-        _2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons._2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        _2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP = (8, Weapons._2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (8, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
 
     class Pylon9:
         R_73__AA_11_Archer____Infra_Red = (9, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -1157,16 +1146,15 @@ class MiG_23MLD(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "MIG-23MLD"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon2:
         R_24R__AA_7_Apex_SA____Semi_Act_Rdr = (2, Weapons.R_24R__AA_7_Apex_SA____Semi_Act_Rdr)
         R_24T__AA_7_Apex_IR____Infra_Red = (2, Weapons.R_24T__AA_7_Apex_IR____Infra_Red)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = (2, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD)
@@ -1181,10 +1169,10 @@ class MiG_23MLD(PlaneType):
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (3, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red = (3, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (3, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (3, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -1201,10 +1189,10 @@ class MiG_23MLD(PlaneType):
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (5, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_ = (5, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red_)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (5, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (5, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -1217,10 +1205,10 @@ class MiG_23MLD(PlaneType):
         R_24R__AA_7_Apex_SA____Semi_Act_Rdr = (6, Weapons.R_24R__AA_7_Apex_SA____Semi_Act_Rdr)
         R_24T__AA_7_Apex_IR____Infra_Red = (6, Weapons.R_24T__AA_7_Apex_IR____Infra_Red)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (6, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (6, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         FAB_100___100kg_GP_Bomb_LD = (6, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (6, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (6, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = (6, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD)
@@ -1252,7 +1240,6 @@ class Su_25(PlaneType):
     radio_frequency = 124
 
     livery_name = "SU-25"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -1264,9 +1251,11 @@ class Su_25(PlaneType):
         Smoke_Generator___orange = (1, Weapons.Smoke_Generator___orange)
 
     class Pylon2:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (2, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (2, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1281,18 +1270,20 @@ class Su_25(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (2, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
 
     class Pylon3:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (3, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (3, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (3, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1309,18 +1300,20 @@ class Su_25(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (3, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (3, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (3, Weapons.Fuel_tank_800L_Wing)
 
     class Pylon4:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (4, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (4, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (4, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1337,18 +1330,20 @@ class Su_25(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (4, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (4, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (4, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
     class Pylon5:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (5, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (5, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (5, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1365,19 +1360,21 @@ class Su_25(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (5, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (5, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (5, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (5, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
     class Pylon6:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (6, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (6, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (6, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (6, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (6, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1394,19 +1391,21 @@ class Su_25(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_ = (6, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (6, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (6, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (6, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (6, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (6, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (6, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (6, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (6, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (6, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
     class Pylon7:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (7, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (7, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (7, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (7, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (7, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (7, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1423,18 +1422,20 @@ class Su_25(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (7, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (7, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (7, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (7, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (7, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
     class Pylon8:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (8, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (8, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (8, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (8, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (8, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (8, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1451,19 +1452,21 @@ class Su_25(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (8, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (8, Weapons.Fuel_tank_800L_Wing)
         SPS_141___ECM_Jamming_Pod = (8, Weapons.SPS_141___ECM_Jamming_Pod)
 
     class Pylon9:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (9, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (9, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (9, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (9, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (9, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (9, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (9, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (9, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1478,12 +1481,12 @@ class Su_25(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (9, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (9, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (9, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (9, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (9, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (9, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (9, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
 
     class Pylon10:
@@ -1515,7 +1518,6 @@ class Su_25TM(PlaneType):
     flare_charge_size = 1
 
     livery_name = "SU-25TM"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -1530,7 +1532,7 @@ class Su_25TM(PlaneType):
     class Pylon2:
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (2, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1545,19 +1547,19 @@ class Su_25TM(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (2, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (2, Weapons.R_73__AA_11_Archer____Infra_Red_)
 
     class Pylon3:
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (3, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (3, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1575,19 +1577,19 @@ class Su_25TM(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (3, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (3, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (3, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (3, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon4:
         B_8M1___20_S_8OFP2 = (4, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (4, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1606,19 +1608,19 @@ class Su_25TM(PlaneType):
         APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (4, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (4, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (4, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon5:
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (5, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (5, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1641,12 +1643,12 @@ class Su_25TM(PlaneType):
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_ = (5, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_ = (5, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (5, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (5, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (5, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
@@ -1658,7 +1660,7 @@ class Su_25TM(PlaneType):
     class Pylon7:
         B_8M1___20_S_8OFP2 = (7, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (7, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (7, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (7, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (7, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1681,19 +1683,19 @@ class Su_25TM(PlaneType):
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_ = (7, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr_)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_ = (7, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr_)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (7, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (7, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (7, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (7, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
     class Pylon8:
         B_8M1___20_S_8OFP2 = (8, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (8, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (8, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (8, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (8, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1712,19 +1714,19 @@ class Su_25TM(PlaneType):
         APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (8, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon9:
         B_8M1___20_S_8OFP2 = (9, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (9, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (9, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (9, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (9, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (9, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (9, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1742,19 +1744,19 @@ class Su_25TM(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (9, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (9, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (9, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (9, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (9, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (9, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (9, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (9, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon10:
         B_8M1___20_S_8OFP2 = (10, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (10, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (10, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (10, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (10, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (10, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (10, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1769,12 +1771,12 @@ class Su_25TM(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (10, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (10, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (10, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (10, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (10, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (10, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (10, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (10, Weapons.R_73__AA_11_Archer____Infra_Red_)
 
@@ -1810,7 +1812,6 @@ class Su_25T(PlaneType):
     radio_frequency = 124
 
     livery_name = "SU-25T"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -1823,9 +1824,11 @@ class Su_25T(PlaneType):
         Smoke_Generator___orange = (1, Weapons.Smoke_Generator___orange)
 
     class Pylon2:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (2, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (2, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1840,19 +1843,21 @@ class Su_25T(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (2, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (2, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (2, Weapons.R_73__AA_11_Archer____Infra_Red_)
 
     class Pylon3:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (3, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (3, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (3, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1870,19 +1875,21 @@ class Su_25T(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (3, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (3, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (3, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (3, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon4:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (4, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (4, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (4, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1901,19 +1908,21 @@ class Su_25T(PlaneType):
         APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (4, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (4, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (4, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (4, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (4, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (4, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (4, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon5:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (5, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (5, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (5, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1933,12 +1942,12 @@ class Su_25T(PlaneType):
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (5, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (5, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (5, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (5, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (5, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (5, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (5, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (5, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
@@ -1947,9 +1956,11 @@ class Su_25T(PlaneType):
         L_081_Fantasmagoria_ELINT_pod = (6, Weapons.L_081_Fantasmagoria_ELINT_pod)
 
     class Pylon7:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (7, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (7, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (7, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (7, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (7, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (7, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -1969,19 +1980,21 @@ class Su_25T(PlaneType):
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (7, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (7, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (7, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (7, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (7, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (7, Weapons.Fuel_tank_800L_Wing)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (7, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
 
     class Pylon8:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (8, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (8, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (8, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (8, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (8, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (8, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2000,19 +2013,21 @@ class Su_25T(PlaneType):
         APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag = (8, Weapons.APU_8___8_x_9M127_1_Vikhr_M_ATGM__LOSBR__Tandem_HEAT_Frag)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (8, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (8, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon9:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (9, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (9, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (9, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (9, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (9, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (9, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (9, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (9, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2030,19 +2045,21 @@ class Su_25T(PlaneType):
         Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_ = (9, Weapons.Kh_25ML__AS_10_Karen____300kg__ASM__Semi_Act_Laser_)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (9, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (9, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (9, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (9, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (9, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         Fuel_tank_800L_Wing = (9, Weapons.Fuel_tank_800L_Wing)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (9, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
 
     class Pylon10:
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8OM_IL)
         B_8M1___20_S_8OFP2 = (10, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (10, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (10, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (10, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
+        SAB_250_200___200_kg_Illumination_Bomb = (10, Weapons.SAB_250_200___200_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_ = (10, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD_)
         FAB_250___250kg_GP_Bomb_LD = (10, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (10, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2057,12 +2074,12 @@ class Su_25T(PlaneType):
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (10, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (10, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (10, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (10, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (10, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (10, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         S_25L___320Kg__340mm_Laser_Guided_Rkt = (10, Weapons.S_25L___320Kg__340mm_Laser_Guided_Rkt)
         R_73__AA_11_Archer____Infra_Red_ = (10, Weapons.R_73__AA_11_Archer____Infra_Red_)
 
@@ -2099,7 +2116,6 @@ class Su_33(PlaneType):
     radio_frequency = 124
 
     livery_name = "SU-33"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_73__AA_11_Archer____Infra_Red = (1, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -2115,7 +2131,7 @@ class Su_33(PlaneType):
         R_73__AA_11_Archer____Infra_Red = (2, Weapons.R_73__AA_11_Archer____Infra_Red)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         Smoke_Generator___red = (2, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (2, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (2, Weapons.Smoke_Generator___blue)
@@ -2140,7 +2156,7 @@ class Su_33(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (3, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -2151,14 +2167,14 @@ class Su_33(PlaneType):
         Smoke_Generator___yellow = (3, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (3, Weapons.Smoke_Generator___orange)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (3, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
         _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
         _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons._2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
-        _2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons._2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        _2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP = (3, Weapons._2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (3, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD)
 
@@ -2176,7 +2192,7 @@ class Su_33(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (4, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -2187,8 +2203,8 @@ class Su_33(PlaneType):
         Smoke_Generator___yellow = (4, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (4, Weapons.Smoke_Generator___orange)
         B_8M1___20_S_8OFP2 = (4, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (4, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon5:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -2212,7 +2228,7 @@ class Su_33(PlaneType):
         Smoke_Generator___orange = (5, Weapons.Smoke_Generator___orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (5, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_4_x_FAB_250___250kg_GP_Bombs_LD = (5, Weapons.MBD3_U6_68_with_4_x_FAB_250___250kg_GP_Bombs_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon6:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (6, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -2234,7 +2250,7 @@ class Su_33(PlaneType):
         Smoke_Generator___orange = (6, Weapons.Smoke_Generator___orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (6, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (6, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon7:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (7, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -2252,7 +2268,7 @@ class Su_33(PlaneType):
         FAB_500_M_62___500kg_GP_Bomb_LD = (7, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (7, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (7, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon8:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (8, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -2276,7 +2292,7 @@ class Su_33(PlaneType):
         Smoke_Generator___orange = (8, Weapons.Smoke_Generator___orange)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_4_x_FAB_250___250kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_4_x_FAB_250___250kg_GP_Bombs_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon9:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (9, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -2292,7 +2308,7 @@ class Su_33(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (9, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (9, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (9, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (9, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -2303,8 +2319,8 @@ class Su_33(PlaneType):
         Smoke_Generator___yellow = (9, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (9, Weapons.Smoke_Generator___orange)
         B_8M1___20_S_8OFP2 = (9, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (9, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        SAB_100___100kg_flare_illumination_Bomb = (9, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        SAB_100MN___100_kg_Illumination_Bomb = (9, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon10:
         R_73__AA_11_Archer____Infra_Red = (10, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -2323,7 +2339,7 @@ class Su_33(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (10, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (10, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         FAB_500_M_62___500kg_GP_Bomb_LD = (10, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (10, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -2334,14 +2350,14 @@ class Su_33(PlaneType):
         Smoke_Generator___yellow = (10, Weapons.Smoke_Generator___yellow)
         Smoke_Generator___orange = (10, Weapons.Smoke_Generator___orange)
         B_8M1___20_S_8OFP2 = (10, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (10, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        SAB_100___100kg_flare_illumination_Bomb = (10, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        SAB_100MN___100_kg_Illumination_Bomb = (10, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         _2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator = (10, Weapons._2_x_S_25_OFM___340mm_UnGdrocket__480kg_Penetrator)
         _2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons._2_x_S_25_O___420mm_UnGd_Rkt__380kg_Frag)
         _2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons._2_x_B_13L_pods___10_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
-        _2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (10, Weapons._2_x_B_8M1_pods___40_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
-        _2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk = (10, Weapons._2_x_B_8V20A_pods___40_x_S_8TsM__80mm_UnGd_Rkts__Smk)
-        _2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP = (10, Weapons._2_x_B_8V20A_pods___40_x_S_8OFP2__80mm_UnGd_Rkts__HE_Frag_AP)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (10, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
+        _2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP = (10, Weapons._2_x_B_8M1___40_x_UnGd_Rkts__80_mm_S_8OFP2_MPP)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (10, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD = (10, Weapons.MBD3_U6_68_with_3_x_FAB_250___250kg_GP_Bombs_LD)
 
@@ -2349,7 +2365,7 @@ class Su_33(PlaneType):
         R_73__AA_11_Archer____Infra_Red = (11, Weapons.R_73__AA_11_Archer____Infra_Red)
         FAB_250___250kg_GP_Bomb_LD = (11, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (11, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (11, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (11, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         Smoke_Generator___red = (11, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (11, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (11, Weapons.Smoke_Generator___blue)
@@ -2388,7 +2404,6 @@ class MiG_25PD(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "MIG-25PD"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_40RD__AA_6_Acrid____Semi_Act_Rdr = (1, Weapons.R_40RD__AA_6_Acrid____Semi_Act_Rdr)
@@ -2423,12 +2438,11 @@ class MiG_25RBT(PlaneType):
     max_speed = 3000
 
     livery_name = "MIG-25RBT"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         FAB_100___100kg_GP_Bomb_LD = (1, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = (1, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2441,7 +2455,7 @@ class MiG_25RBT(PlaneType):
 
     class Pylon2:
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = (2, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2454,7 +2468,7 @@ class MiG_25RBT(PlaneType):
 
     class Pylon3:
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD)
         FAB_250___250kg_GP_Bomb_LD = (3, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (3, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2468,7 +2482,7 @@ class MiG_25RBT(PlaneType):
     class Pylon4:
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (4, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD = (4, Weapons.MBD2_67U_with_4_x_FAB_100___100kg_GP_Bombs_LD)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
@@ -2500,7 +2514,6 @@ class Su_30(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "SU-30"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_73__AA_11_Archer____Infra_Red = (1, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -2528,7 +2541,7 @@ class Su_30(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
         Kh_59M__AS_18_Kazoo____930kg__ASM__IN = (3, Weapons.Kh_59M__AS_18_Kazoo____930kg__ASM__IN)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -2649,7 +2662,7 @@ class Su_30(PlaneType):
         Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser = (8, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser)
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (8, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
         Kh_59M__AS_18_Kazoo____930kg__ASM__IN = (8, Weapons.Kh_59M__AS_18_Kazoo____930kg__ASM__IN)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -2707,12 +2720,11 @@ class Su_17M4(PlaneType):
     flare_charge_size = 1
 
     livery_name = "SU-17M4"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         B_8M1___20_S_8OFP2 = (1, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (1, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_500_M_62___500kg_GP_Bomb_LD = (1, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (1, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (1, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
@@ -2729,12 +2741,12 @@ class Su_17M4(PlaneType):
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (1, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Fuel_tank_1150L = (1, Weapons.Fuel_tank_1150L)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (1, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (1, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (1, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (1, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (1, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (1, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (1, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (1, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (1, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -2745,7 +2757,7 @@ class Su_17M4(PlaneType):
     class Pylon3:
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_500_M_62___500kg_GP_Bomb_LD = (3, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (3, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
@@ -2765,12 +2777,12 @@ class Su_17M4(PlaneType):
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr = (3, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (3, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         SPS_141___ECM_Jamming_Pod = (3, Weapons.SPS_141___ECM_Jamming_Pod)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (3, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
@@ -2779,7 +2791,7 @@ class Su_17M4(PlaneType):
 
     class Pylon4:
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_500_M_62___500kg_GP_Bomb_LD = (4, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (4, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
@@ -2797,7 +2809,7 @@ class Su_17M4(PlaneType):
 
     class Pylon5:
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_500_M_62___500kg_GP_Bomb_LD = (5, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (5, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (5, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
@@ -2816,7 +2828,7 @@ class Su_17M4(PlaneType):
     class Pylon6:
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (6, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_500_M_62___500kg_GP_Bomb_LD = (6, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (6, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (6, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
@@ -2835,12 +2847,12 @@ class Su_17M4(PlaneType):
         Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided = (6, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr = (6, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (6, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (6, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (6, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (6, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (6, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (6, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod = (6, Weapons.SPPU_22_1___2_x_23mm__GSh_23L_Autocannon_Pod)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (6, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (6, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
@@ -2852,7 +2864,7 @@ class Su_17M4(PlaneType):
     class Pylon8:
         B_8M1___20_S_8OFP2 = (8, Weapons.B_8M1___20_S_8OFP2)
         FAB_100___100kg_GP_Bomb_LD = (8, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_500_M_62___500kg_GP_Bomb_LD = (8, Weapons.FAB_500_M_62___500kg_GP_Bomb_LD)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (8, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (8, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
@@ -2869,12 +2881,12 @@ class Su_17M4(PlaneType):
         Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided = (8, Weapons.Kh_25MR__AS_10_Karen____300kg__ASM__10km__RC_Guided)
         Fuel_tank_1150L = (8, Weapons.Fuel_tank_1150L)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (8, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (8, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (8, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr = (8, Weapons.Kh_25MP__AS_12_Kegler____320kg__ARM__Pas_Rdr)
@@ -2895,7 +2907,6 @@ class MiG_31(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "MIG-31"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_40RD__AA_6_Acrid____Semi_Act_Rdr = (1, Weapons.R_40RD__AA_6_Acrid____Semi_Act_Rdr)
@@ -2940,7 +2951,6 @@ class Tu_95MS(PlaneType):
     flare_charge_size = 1
 
     livery_name = "TU-95MS"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         _6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC = (1, Weapons._6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC)
@@ -2965,16 +2975,15 @@ class Su_24M(PlaneType):
     flare_charge_size = 1
 
     livery_name = "SU-24M"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.APU_60_1M_with_R_60M__AA_8_Aphid____Infra_Red)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (1, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (1, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (1, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (1, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (1, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (1, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
@@ -3011,9 +3020,9 @@ class Su_24M(PlaneType):
         KAB_500Kr___500kg_TV_Guided_Bomb = (2, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (2, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (2, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (2, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
@@ -3039,14 +3048,14 @@ class Su_24M(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (3, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KAB_500LG___500kg_Laser_Guided_Bomb = (3, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (3, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon4:
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (4, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (4, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         KAB_1500L___1500kg_Laser_Guided_Bomb = (4, Weapons.KAB_1500L___1500kg_Laser_Guided_Bomb)
         KAB_1500LG_Pr___1500kg_Laser_Guided_Penetrator_Bomb = (4, Weapons.KAB_1500LG_Pr___1500kg_Laser_Guided_Penetrator_Bomb)
         KAB_1500Kr___1500kg_TV_Guided_Bomb = (4, Weapons.KAB_1500Kr___1500kg_TV_Guided_Bomb)
@@ -3074,7 +3083,7 @@ class Su_24M(PlaneType):
         BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb = (6, Weapons.BetAB_500ShP___500kg_Concrete_Piercing_HD_w_booster_Bomb)
         KAB_500LG___500kg_Laser_Guided_Bomb = (6, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (6, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon7:
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (7, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
@@ -3101,9 +3110,9 @@ class Su_24M(PlaneType):
         KAB_500Kr___500kg_TV_Guided_Bomb = (7, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (7, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (7, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (7, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (7, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (7, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (7, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (7, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (7, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
@@ -3120,9 +3129,9 @@ class Su_24M(PlaneType):
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (8, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag = (8, Weapons.RBK_250_275___150_x_AO_1SCh__250kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (8, Weapons.UB_32A_pod___32_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         FAB_250___250kg_GP_Bomb_LD = (8, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (8, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
@@ -3154,7 +3163,6 @@ class Su_24MR(PlaneType):
     flare_charge_size = 1
 
     livery_name = "SU-24MR"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.APU_60_2M_with_2_x_R_60M__AA_8_Aphid____Infra_Red)
@@ -3194,7 +3202,6 @@ class Tu_160(PlaneType):
     flare_charge_size = 1
 
     livery_name = "TU-160"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         _6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC = (1, Weapons._6_x_Kh_65__AS_15B_Kent____1250kg__ASM__IN__MCC)
@@ -3217,7 +3224,6 @@ class F_117A(PlaneType):
     max_speed = 1000
 
     livery_name = "F-117A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         GBU_10___2000lb_Laser_Guided_Bomb = (1, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -3259,7 +3265,6 @@ class B_1B(PlaneType):
     }
 
     livery_name = "B-1B"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         MK_82_28 = (1, Weapons.MK_82_28)
@@ -3313,7 +3318,6 @@ class S_3B(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "S-3B"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD = (1, Weapons.BRU_42_with_3_x_Mk_82___500lb_GP_Bombs_LD)
@@ -3380,7 +3384,6 @@ class S_3B_Tanker(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "S-3B TANKER"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -3404,7 +3407,6 @@ class Mirage_2000_5(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "MIRAGE 2000-5"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_2_IR_AAM = (1, Weapons.R550_Magic_2_IR_AAM)
@@ -3467,7 +3469,6 @@ class F_15C(PlaneType):
     radio_frequency = 124
 
     livery_name = "F-15C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -3594,7 +3595,6 @@ class F_15E(PlaneType):
     }
 
     livery_name = "F-15E"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -3867,7 +3867,6 @@ class MiG_29A(PlaneType):
     radio_frequency = 124
 
     livery_name = "MIG-29A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -3901,10 +3900,10 @@ class MiG_29A(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (2, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
     class Pylon3:
         R_60M__AA_8_Aphid____Infra_Red = (3, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -3927,10 +3926,10 @@ class MiG_29A(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (3, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
         R_27T__AA_10_Alamo_B____Infra_Red = (3, Weapons.R_27T__AA_10_Alamo_B____Infra_Red)
         R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range = (3, Weapons.R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range)
@@ -3967,10 +3966,10 @@ class MiG_29A(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (5, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (5, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
         R_27T__AA_10_Alamo_B____Infra_Red = (5, Weapons.R_27T__AA_10_Alamo_B____Infra_Red)
         R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range = (5, Weapons.R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range)
@@ -3998,10 +3997,10 @@ class MiG_29A(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (6, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (6, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (6, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
     class Pylon7:
         R_60M__AA_8_Aphid____Infra_Red = (7, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -4037,7 +4036,6 @@ class MiG_29G(PlaneType):
     radio_frequency = 124
 
     livery_name = "MIG-29G"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -4071,10 +4069,10 @@ class MiG_29G(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (2, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
     class Pylon3:
         R_60M__AA_8_Aphid____Infra_Red = (3, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -4097,10 +4095,10 @@ class MiG_29G(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (3, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
         R_27T__AA_10_Alamo_B____Infra_Red = (3, Weapons.R_27T__AA_10_Alamo_B____Infra_Red)
         R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range = (3, Weapons.R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range)
@@ -4137,10 +4135,10 @@ class MiG_29G(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (5, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (5, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
         R_27T__AA_10_Alamo_B____Infra_Red = (5, Weapons.R_27T__AA_10_Alamo_B____Infra_Red)
         R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range = (5, Weapons.R_27ER__AA_10_Alamo_C____Semi_Act_Extended_Range)
@@ -4168,10 +4166,10 @@ class MiG_29G(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (6, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (6, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (6, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
 
     class Pylon7:
         R_60M__AA_8_Aphid____Infra_Red = (7, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -4207,7 +4205,6 @@ class MiG_29S(PlaneType):
     radio_frequency = 124
 
     livery_name = "MIG-29S"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_60M__AA_8_Aphid____Infra_Red = (1, Weapons.R_60M__AA_8_Aphid____Infra_Red)
@@ -4242,10 +4239,10 @@ class MiG_29S(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (2, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (2, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (2, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (2, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (2, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (2, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (2, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (2, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (2, Weapons.R_77__AA_12_Adder____Active_Rdr)
 
     class Pylon3:
@@ -4269,10 +4266,10 @@ class MiG_29S(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (3, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (3, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (3, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (3, Weapons.R_77__AA_12_Adder____Active_Rdr)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (3, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
         R_27T__AA_10_Alamo_B____Infra_Red = (3, Weapons.R_27T__AA_10_Alamo_B____Infra_Red)
@@ -4310,10 +4307,10 @@ class MiG_29S(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (5, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (5, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (5, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (5, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (5, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (5, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (5, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (5, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (5, Weapons.R_77__AA_12_Adder____Active_Rdr)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
         R_27T__AA_10_Alamo_B____Infra_Red = (5, Weapons.R_27T__AA_10_Alamo_B____Infra_Red)
@@ -4342,10 +4339,10 @@ class MiG_29S(PlaneType):
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (6, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (6, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
         KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP = (6, Weapons.KMGU_2___96_x_PTAB_2_5KO_Dispenser__CBU__HEAT_AP)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (6, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__ = (6, Weapons.S_24B___240mm_UnGd_Rkt__235kg__HE_Frag___Low_Smk__)
         B_8M1___20_S_8OFP2 = (6, Weapons.B_8M1___20_S_8OFP2)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (6, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (6, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         R_77__AA_12_Adder____Active_Rdr = (6, Weapons.R_77__AA_12_Adder____Active_Rdr)
 
     class Pylon7:
@@ -4381,7 +4378,6 @@ class Tu_142(PlaneType):
     flare_charge_size = 1
 
     livery_name = "TU-142"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         _6_x_Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (1, Weapons._6_x_Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
@@ -4407,7 +4403,6 @@ class C_130(PlaneType):
     flare_charge_size = 2
 
     livery_name = "C-130"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4430,7 +4425,6 @@ class An_26B(PlaneType):
     flare_charge_size = 1
 
     livery_name = "AN-26B"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4453,7 +4447,6 @@ class An_30M(PlaneType):
     flare_charge_size = 1
 
     livery_name = "AN-30M"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4476,7 +4469,6 @@ class C_17A(PlaneType):
     flare_charge_size = 2
 
     livery_name = "C-17A"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4500,7 +4492,6 @@ class A_50(PlaneType):
     category = "AWACS"  #{D2BC159C-5B7D-40cf-92CD-44DF3E99FAA9}
 
     livery_name = "A-50"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4525,7 +4516,6 @@ class E_3A(PlaneType):
     category = "AWACS"  #{D2BC159C-5B7D-40cf-92CD-44DF3E99FAA9}
 
     livery_name = "E-3A"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4549,7 +4539,6 @@ class IL_78M(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "IL-78M"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4574,7 +4563,6 @@ class E_2C(PlaneType):
     category = "AWACS"  #{D2BC159C-5B7D-40cf-92CD-44DF3E99FAA9}
 
     livery_name = "E-2C"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4597,7 +4585,6 @@ class IL_76MD(PlaneType):
     flare_charge_size = 1
 
     livery_name = "IL-76MD"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -4638,7 +4625,6 @@ class F_16C_bl_50(PlaneType):
     }
 
     livery_name = "F-16C BL.50"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -4838,7 +4824,6 @@ class F_16C_bl_52d(PlaneType):
     }
 
     livery_name = "F-16C BL.52D"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -5026,7 +5011,6 @@ class F_16A(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "F-16A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -5145,7 +5129,6 @@ class F_16A_MLU(PlaneType):
     category = "Interceptor"  #{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}
 
     livery_name = "F-16A MLU"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_120B_AMRAAM___Active_Rdr_AAM = (1, Weapons.AIM_120B_AMRAAM___Active_Rdr_AAM)
@@ -5297,13 +5280,12 @@ class RQ_1A_Predator(PlaneType):
     radio_frequency = 127.5
 
     livery_name = "RQ-1A PREDATOR"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
-        AGM_114K = (1, Weapons.AGM_114K)
+        AGM_114K_Hellfire = (1, Weapons.AGM_114K_Hellfire)
 
     class Pylon2:
-        AGM_114K = (2, Weapons.AGM_114K)
+        AGM_114K_Hellfire = (2, Weapons.AGM_114K_Hellfire)
 
     pylons: Set[int] = {1, 2}
 
@@ -5321,7 +5303,6 @@ class Yak_40(PlaneType):
     max_speed = 570
 
     livery_name = "YAK-40"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -5342,7 +5323,6 @@ class KC_135(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "KC-135"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -5388,7 +5368,6 @@ class FW_190D9(PlaneType):
                 B_4_Gasoline = 2
 
     livery_name = "FW-190D9"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         FW109_FUEL_TANK = (1, Weapons.FW109_FUEL_TANK)
@@ -5446,7 +5425,6 @@ class FW_190A8(PlaneType):
                 Additional_fuel = 2
 
     livery_name = "FW-190A8"  # from type
-    Liveries = Liveries()[livery_name]
 #ERRR <CLEAN>
 
     class Pylon1:
@@ -5520,7 +5498,6 @@ class Bf_109K_4(PlaneType):
                 Flare_Gun = 1
 
     livery_name = "BF-109K-4"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         SC_501_SC500 = (1, Weapons.SC_501_SC500)
@@ -5557,7 +5534,6 @@ class SpitfireLFMkIX(PlaneType):
     }
 
     livery_name = "SPITFIRELFMKIX"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier = (1, Weapons.British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier)
@@ -5604,7 +5580,6 @@ class SpitfireLFMkIXCW(PlaneType):
     }
 
     livery_name = "SPITFIRELFMKIXCW"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier = (1, Weapons.British_GP_250LBS_Bomb_MK4_on_LH_Spitfire_Wing_Carrier)
@@ -5654,7 +5629,6 @@ class P_51D(PlaneType):
     }
 
     livery_name = "P-51D"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         HVAR__UnGd_Rkt = (1, Weapons.HVAR__UnGd_Rkt)
@@ -5725,7 +5699,6 @@ class P_51D_30_NA(PlaneType):
     }
 
     livery_name = "P-51D"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         HVAR__UnGd_Rkt = (1, Weapons.HVAR__UnGd_Rkt)
@@ -5810,7 +5783,6 @@ class P_47D_30(PlaneType):
                 Water = 1
 
     livery_name = "P-47D-30"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AN_M30A1___100lb_GP_Bomb_LD = (1, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
@@ -5898,7 +5870,6 @@ class P_47D_30bl1(PlaneType):
                 Water = 1
 
     livery_name = "P-47D-30"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AN_M30A1___100lb_GP_Bomb_LD = (1, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
@@ -5972,7 +5943,6 @@ class P_47D_40(PlaneType):
                 Water = 1
 
     livery_name = "P-47D-30"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AN_M30A1___100lb_GP_Bomb_LD = (1, Weapons.AN_M30A1___100lb_GP_Bomb_LD)
@@ -6118,7 +6088,6 @@ class MosquitoFBMkVI(PlaneType):
                 White = 0.05
 
     livery_name = "MOSQUITOFBMKVI"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         _250_lb_GP_Mk_IV = (1, Weapons._250_lb_GP_Mk_IV)
@@ -6205,7 +6174,6 @@ class A_20G(PlaneType):
     }
 
     livery_name = "A-20G"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         _4_x_AN_M64___500lb_GP_Bomb_LD = (1, Weapons._4_x_AN_M64___500lb_GP_Bomb_LD)
@@ -6244,7 +6212,6 @@ class A_10A(PlaneType):
     }
 
     livery_name = "A-10A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_105_2_AIM_9L = (1, Weapons.LAU_105_2_AIM_9L)
@@ -6623,7 +6590,6 @@ class A_10C(PlaneType):
     }
 
     livery_name = "A-10C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM)
@@ -7181,7 +7147,6 @@ class A_10C_2(PlaneType):
     }
 
     livery_name = "A-10CII"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_105_with_2_x_AIM_9M_Sidewinder_IR_AAM)
@@ -7773,7 +7738,6 @@ class AJS37(PlaneType):
                 Disallow_cartridge_switching = 3
 
     livery_name = "AJS37"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Rb_24J__AIM_9P__Sidewinder_IR_AAM = (1, Weapons.Rb_24J__AIM_9P__Sidewinder_IR_AAM)
@@ -8104,7 +8068,6 @@ class AV8BNA(PlaneType):
             id = "AAR_Zone3"
 
     livery_name = "AV8BNA"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -8426,7 +8389,6 @@ class KC130(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "KC130"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -8452,7 +8414,6 @@ class KC135MPRS(PlaneType):
     category = "Tankers"  #{8A302789-A55D-4897-B647-66493FA6826F}
 
     livery_name = "KC135MPRS"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -8535,7 +8496,6 @@ class C_101EB(PlaneType):
             id = "SmokeOnGround"
 
     livery_name = "C-101EB"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Smoke_System__White_Smoke_ = (1, Weapons.Smoke_System__White_Smoke_)
@@ -8630,7 +8590,6 @@ class C_101CC(PlaneType):
                 Rear_seat = 2
 
     livery_name = "C-101CC"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -8729,7 +8688,6 @@ class J_11A(PlaneType):
     radio_frequency = 127.5
 
     livery_name = "J-11A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_73__AA_11_Archer____Infra_Red = (1, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -8768,11 +8726,11 @@ class J_11A(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (3, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (3, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         B_8M1___20_S_8OFP2 = (3, Weapons.B_8M1___20_S_8OFP2)
         _2_x_FAB_250 = (3, Weapons._2_x_FAB_250)
         _2_x_FAB_500 = (3, Weapons._2_x_FAB_500)
@@ -8797,7 +8755,7 @@ class J_11A(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (4, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (4, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (4, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon5:
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (5, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -8812,7 +8770,7 @@ class J_11A(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (5, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (5, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (5, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         Smoke_Generator___red = (5, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (5, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (5, Weapons.Smoke_Generator___blue)
@@ -8834,7 +8792,7 @@ class J_11A(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (6, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (6, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (6, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         Smoke_Generator___red = (6, Weapons.Smoke_Generator___red)
         Smoke_Generator___green = (6, Weapons.Smoke_Generator___green)
         Smoke_Generator___blue = (6, Weapons.Smoke_Generator___blue)
@@ -8855,7 +8813,7 @@ class J_11A(PlaneType):
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (7, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP = (7, Weapons.RBK_500___268_x_PTAB_1M__500kg_CBU_Light_HEAT_AP)
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (7, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
 
     class Pylon8:
         R_73__AA_11_Archer____Infra_Red = (8, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -8875,11 +8833,11 @@ class J_11A(PlaneType):
         RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag = (8, Weapons.RBK_500U___126_x_OAB_2_5RT__500kg_CBU_HE_Frag)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_250___250kg_GP_Bombs_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (8, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (8, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (8, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
-        B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk = (8, Weapons.B_8M1_pod___20_x_S_8TsM__80mm_UnGd_Rkts__Smk)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange = (8, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8TsM_SM_Orange)
         B_8M1___20_S_8OFP2 = (8, Weapons.B_8M1___20_S_8OFP2)
         _2_x_FAB_250_ = (8, Weapons._2_x_FAB_250_)
         _2_x_FAB_500_ = (8, Weapons._2_x_FAB_500_)
@@ -8981,7 +8939,6 @@ class JF_17(PlaneType):
             id = "AARProbe"
 
     livery_name = "JF-17"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         DIS_PL_5EII = (1, Weapons.DIS_PL_5EII)
@@ -9002,7 +8959,6 @@ class JF_17(PlaneType):
         DIS_C_701IR = (2, Weapons.DIS_C_701IR)
         DIS_LS_6_500 = (2, Weapons.DIS_LS_6_500)
         DIS_LS_6_250 = (2, Weapons.DIS_LS_6_250)
-        DIS_LS_6_100 = (2, Weapons.DIS_LS_6_100)
         DIS_LS_6_250_DUAL_L = (2, Weapons.DIS_LS_6_250_DUAL_L)
         DIS_LS_6_100_DUAL_L = (2, Weapons.DIS_LS_6_100_DUAL_L)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -9099,7 +9055,6 @@ class JF_17(PlaneType):
         DIS_C_701IR = (6, Weapons.DIS_C_701IR)
         DIS_LS_6_500 = (6, Weapons.DIS_LS_6_500)
         DIS_LS_6_250 = (6, Weapons.DIS_LS_6_250)
-        DIS_LS_6_100 = (6, Weapons.DIS_LS_6_100)
         DIS_LS_6_250_DUAL_R = (6, Weapons.DIS_LS_6_250_DUAL_R)
         DIS_LS_6_100_DUAL_R = (6, Weapons.DIS_LS_6_100_DUAL_R)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (6, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -9151,7 +9106,6 @@ class KJ_2000(PlaneType):
     category = "AWACS"  #{D2BC159C-5B7D-40cf-92CD-44DF3E99FAA9}
 
     livery_name = "KJ-2000"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -9171,7 +9125,6 @@ class WingLoong_I(PlaneType):
     radio_frequency = 127.5
 
     livery_name = "WINGLOONG-I"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         DIS_AKD_10 = (1, Weapons.DIS_AKD_10)
@@ -9209,7 +9162,6 @@ class H_6J(PlaneType):
             id = "Belly Bay Door"
 
     livery_name = "H-6J"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         DIS_GDJ_YJ83K = (1, Weapons.DIS_GDJ_YJ83K)
@@ -9333,7 +9285,6 @@ class Christen_Eagle_II(PlaneType):
             id = "NS430allow"
 
     livery_name = "CHRISTEN EAGLE II"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Smoke_for_Christen_Eagle_II__white = (1, Weapons.Smoke_for_Christen_Eagle_II__white)
@@ -9464,7 +9415,6 @@ class F_16C_50(PlaneType):
                 NVG = 2
 
     livery_name = "F-16C_50"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -9748,7 +9698,6 @@ class F_5E(PlaneType):
     radio_frequency = 305
 
     livery_name = "F-5E"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -10075,7 +10024,6 @@ class F_5E_3(PlaneType):
                 x_10s = 4
 
     livery_name = "F-5E-3"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -10292,7 +10240,6 @@ class F_86F_Sabre(PlaneType):
     }
 
     livery_name = "F-86F SABRE"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Fuel_Tank_200_gallons = (1, Weapons.Fuel_Tank_200_gallons)
@@ -10497,7 +10444,6 @@ class F_14B(PlaneType):
             id = "LGB1"
 
     livery_name = "F-14B"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_138_AIM_9M = (1, Weapons.LAU_138_AIM_9M)
@@ -10554,25 +10500,25 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
         BDU_45 = (4, Weapons.BDU_45)
         BDU_45B = (4, Weapons.BDU_45B)
+        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
+        Mk_83 = (4, Weapons.Mk_83)
+        GBU_12 = (4, Weapons.GBU_12)
+        GBU_16 = (4, Weapons.GBU_16)
+        Mk_20 = (4, Weapons.Mk_20)
+        ADM_141A_ = (4, Weapons.ADM_141A_)
+        Mk_84 = (4, Weapons.Mk_84)
+        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_24 = (4, Weapons.GBU_24)
         MAK79_4_Mk_81 = (4, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (4, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (4, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (4, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (4, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (4, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
-        Mk_83 = (4, Weapons.Mk_83)
-        GBU_12 = (4, Weapons.GBU_12)
-        GBU_16 = (4, Weapons.GBU_16)
-        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
-        Mk_20 = (4, Weapons.Mk_20)
-        ADM_141A_ = (4, Weapons.ADM_141A_)
-        Mk_84 = (4, Weapons.Mk_84)
-        GBU_10 = (4, Weapons.GBU_10)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
-        GBU_24 = (4, Weapons.GBU_24)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -10589,22 +10535,22 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
         BDU_45 = (5, Weapons.BDU_45)
         BDU_45B = (5, Weapons.BDU_45B)
+        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
+        Mk_83 = (5, Weapons.Mk_83)
+        GBU_12 = (5, Weapons.GBU_12)
+        GBU_16 = (5, Weapons.GBU_16)
+        Mk_20 = (5, Weapons.Mk_20)
+        ADM_141A_ = (5, Weapons.ADM_141A_)
+        Mk_84 = (5, Weapons.Mk_84)
+        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
         MAK79_3_Mk_81 = (5, Weapons.MAK79_3_Mk_81)
         MAK79_3_Mk_82 = (5, Weapons.MAK79_3_Mk_82)
         MAK79_3_BDU_45 = (5, Weapons.MAK79_3_BDU_45)
         MAK79_3_BDU_45B = (5, Weapons.MAK79_3_BDU_45B)
         MAK79_3_BDU_33 = (5, Weapons.MAK79_3_BDU_33)
-        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR = (5, Weapons.MAK79_3_Mk_82AIR)
         MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
         MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
-        Mk_83 = (5, Weapons.Mk_83)
-        GBU_12 = (5, Weapons.GBU_12)
-        GBU_16 = (5, Weapons.GBU_16)
-        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
-        Mk_20 = (5, Weapons.Mk_20)
-        ADM_141A_ = (5, Weapons.ADM_141A_)
-        Mk_84 = (5, Weapons.Mk_84)
         MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
 
     class Pylon6:
@@ -10622,24 +10568,24 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
         BDU_45 = (6, Weapons.BDU_45)
         BDU_45B = (6, Weapons.BDU_45B)
+        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
+        Mk_83 = (6, Weapons.Mk_83)
+        GBU_12 = (6, Weapons.GBU_12)
+        GBU_16 = (6, Weapons.GBU_16)
+        Mk_20 = (6, Weapons.Mk_20)
+        ADM_141A_ = (6, Weapons.ADM_141A_)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_24 = (6, Weapons.GBU_24)
+        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
         MAK79_3_Mk_81_ = (6, Weapons.MAK79_3_Mk_81_)
         MAK79_3_Mk_82_ = (6, Weapons.MAK79_3_Mk_82_)
         MAK79_3_BDU_45_ = (6, Weapons.MAK79_3_BDU_45_)
         MAK79_3_BDU_45B_ = (6, Weapons.MAK79_3_BDU_45B_)
         MAK79_3_BDU_33_ = (6, Weapons.MAK79_3_BDU_33_)
-        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
         MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
-        Mk_83 = (6, Weapons.Mk_83)
-        GBU_12 = (6, Weapons.GBU_12)
-        GBU_16 = (6, Weapons.GBU_16)
-        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
-        Mk_20 = (6, Weapons.Mk_20)
-        ADM_141A_ = (6, Weapons.ADM_141A_)
-        Mk_84 = (6, Weapons.Mk_84)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
-        GBU_24 = (6, Weapons.GBU_24)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -10656,23 +10602,23 @@ class F_14B(PlaneType):
         Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
         BDU_45 = (7, Weapons.BDU_45)
         BDU_45B = (7, Weapons.BDU_45B)
+        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
+        Mk_83 = (7, Weapons.Mk_83)
+        GBU_12 = (7, Weapons.GBU_12)
+        GBU_16 = (7, Weapons.GBU_16)
+        Mk_20 = (7, Weapons.Mk_20)
+        ADM_141A_ = (7, Weapons.ADM_141A_)
+        Mk_84 = (7, Weapons.Mk_84)
+        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
+        GBU_10 = (7, Weapons.GBU_10)
         MAK79_4_Mk_81 = (7, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (7, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (7, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (7, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (7, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (7, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
-        Mk_83 = (7, Weapons.Mk_83)
-        GBU_12 = (7, Weapons.GBU_12)
-        GBU_16 = (7, Weapons.GBU_16)
-        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
-        Mk_20 = (7, Weapons.Mk_20)
-        ADM_141A_ = (7, Weapons.ADM_141A_)
-        Mk_84 = (7, Weapons.Mk_84)
-        GBU_10 = (7, Weapons.GBU_10)
         MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
 
     class Pylon8:
@@ -10871,7 +10817,6 @@ class F_14A_135_GR(PlaneType):
             id = "LGB1"
 
     livery_name = "F-14A-135-GR"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_138_AIM_9M = (1, Weapons.LAU_138_AIM_9M)
@@ -10928,25 +10873,25 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (4, Weapons.Mk_82_SnakeEye)
         BDU_45 = (4, Weapons.BDU_45)
         BDU_45B = (4, Weapons.BDU_45B)
+        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
+        Mk_83 = (4, Weapons.Mk_83)
+        GBU_12 = (4, Weapons.GBU_12)
+        GBU_16 = (4, Weapons.GBU_16)
+        Mk_20 = (4, Weapons.Mk_20)
+        ADM_141A_ = (4, Weapons.ADM_141A_)
+        Mk_84 = (4, Weapons.Mk_84)
+        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
+        GBU_10 = (4, Weapons.GBU_10)
+        GBU_24 = (4, Weapons.GBU_24)
         MAK79_4_Mk_81 = (4, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (4, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (4, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (4, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (4, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (4, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (4, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (4, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83 = (4, Weapons.MAK79_3_Mk_83)
-        Mk_83 = (4, Weapons.Mk_83)
-        GBU_12 = (4, Weapons.GBU_12)
-        GBU_16 = (4, Weapons.GBU_16)
-        _2_LAU_10___4_ZUNI_MK_71___ = (4, Weapons._2_LAU_10___4_ZUNI_MK_71___)
-        Mk_20 = (4, Weapons.Mk_20)
-        ADM_141A_ = (4, Weapons.ADM_141A_)
-        Mk_84 = (4, Weapons.Mk_84)
-        GBU_10 = (4, Weapons.GBU_10)
         MAK79_2_MK_20 = (4, Weapons.MAK79_2_MK_20)
-        GBU_24 = (4, Weapons.GBU_24)
 
     class Pylon5:
         AIM_54A_Mk47 = (5, Weapons.AIM_54A_Mk47)
@@ -10963,22 +10908,22 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (5, Weapons.Mk_82_SnakeEye)
         BDU_45 = (5, Weapons.BDU_45)
         BDU_45B = (5, Weapons.BDU_45B)
+        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
+        Mk_83 = (5, Weapons.Mk_83)
+        GBU_12 = (5, Weapons.GBU_12)
+        GBU_16 = (5, Weapons.GBU_16)
+        Mk_20 = (5, Weapons.Mk_20)
+        ADM_141A_ = (5, Weapons.ADM_141A_)
+        Mk_84 = (5, Weapons.Mk_84)
+        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
         MAK79_3_Mk_81 = (5, Weapons.MAK79_3_Mk_81)
         MAK79_3_Mk_82 = (5, Weapons.MAK79_3_Mk_82)
         MAK79_3_BDU_45 = (5, Weapons.MAK79_3_BDU_45)
         MAK79_3_BDU_45B = (5, Weapons.MAK79_3_BDU_45B)
         MAK79_3_BDU_33 = (5, Weapons.MAK79_3_BDU_33)
-        _3_BDU_33_ = (5, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR = (5, Weapons.MAK79_3_Mk_82AIR)
         MAK79_3_Mk_82_SnakeEye = (5, Weapons.MAK79_3_Mk_82_SnakeEye)
         MAK79_Mk_83_ = (5, Weapons.MAK79_Mk_83_)
-        Mk_83 = (5, Weapons.Mk_83)
-        GBU_12 = (5, Weapons.GBU_12)
-        GBU_16 = (5, Weapons.GBU_16)
-        _2_SUU_25___8_LUU_2___ = (5, Weapons._2_SUU_25___8_LUU_2___)
-        Mk_20 = (5, Weapons.Mk_20)
-        ADM_141A_ = (5, Weapons.ADM_141A_)
-        Mk_84 = (5, Weapons.Mk_84)
         MAK79_MK_20_ = (5, Weapons.MAK79_MK_20_)
 
     class Pylon6:
@@ -10996,24 +10941,24 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (6, Weapons.Mk_82_SnakeEye)
         BDU_45 = (6, Weapons.BDU_45)
         BDU_45B = (6, Weapons.BDU_45B)
+        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
+        Mk_83 = (6, Weapons.Mk_83)
+        GBU_12 = (6, Weapons.GBU_12)
+        GBU_16 = (6, Weapons.GBU_16)
+        Mk_20 = (6, Weapons.Mk_20)
+        ADM_141A_ = (6, Weapons.ADM_141A_)
+        Mk_84 = (6, Weapons.Mk_84)
+        GBU_24 = (6, Weapons.GBU_24)
+        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
         MAK79_3_Mk_81_ = (6, Weapons.MAK79_3_Mk_81_)
         MAK79_3_Mk_82_ = (6, Weapons.MAK79_3_Mk_82_)
         MAK79_3_BDU_45_ = (6, Weapons.MAK79_3_BDU_45_)
         MAK79_3_BDU_45B_ = (6, Weapons.MAK79_3_BDU_45B_)
         MAK79_3_BDU_33_ = (6, Weapons.MAK79_3_BDU_33_)
-        _3_BDU_33_ = (6, Weapons._3_BDU_33_)
         MAK79_3_Mk_82AIR_ = (6, Weapons.MAK79_3_Mk_82AIR_)
         MAK79_3_Mk_82_SnakeEye_ = (6, Weapons.MAK79_3_Mk_82_SnakeEye_)
         MAK79_Mk_83 = (6, Weapons.MAK79_Mk_83)
-        Mk_83 = (6, Weapons.Mk_83)
-        GBU_12 = (6, Weapons.GBU_12)
-        GBU_16 = (6, Weapons.GBU_16)
-        SUU_25___8_LUU_2_ = (6, Weapons.SUU_25___8_LUU_2_)
-        Mk_20 = (6, Weapons.Mk_20)
-        ADM_141A_ = (6, Weapons.ADM_141A_)
-        Mk_84 = (6, Weapons.Mk_84)
         MAK79_MK_20 = (6, Weapons.MAK79_MK_20)
-        GBU_24 = (6, Weapons.GBU_24)
 
     class Pylon7:
         AIM_54A_Mk47 = (7, Weapons.AIM_54A_Mk47)
@@ -11030,23 +10975,23 @@ class F_14A_135_GR(PlaneType):
         Mk_82_SnakeEye = (7, Weapons.Mk_82_SnakeEye)
         BDU_45 = (7, Weapons.BDU_45)
         BDU_45B = (7, Weapons.BDU_45B)
+        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
+        Mk_83 = (7, Weapons.Mk_83)
+        GBU_12 = (7, Weapons.GBU_12)
+        GBU_16 = (7, Weapons.GBU_16)
+        Mk_20 = (7, Weapons.Mk_20)
+        ADM_141A_ = (7, Weapons.ADM_141A_)
+        Mk_84 = (7, Weapons.Mk_84)
+        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
+        GBU_10 = (7, Weapons.GBU_10)
         MAK79_4_Mk_81 = (7, Weapons.MAK79_4_Mk_81)
         MAK79_4_Mk_82 = (7, Weapons.MAK79_4_Mk_82)
         MAK79_4_BDU_45 = (7, Weapons.MAK79_4_BDU_45)
         MAK79_4_BDU_45B = (7, Weapons.MAK79_4_BDU_45B)
         MAK79_4_BDU_33 = (7, Weapons.MAK79_4_BDU_33)
-        _3_BDU_33_ = (7, Weapons._3_BDU_33_)
         MAK79_4_Mk_82AIR = (7, Weapons.MAK79_4_Mk_82AIR)
         MAK79_4_Mk_82_SnakeEye = (7, Weapons.MAK79_4_Mk_82_SnakeEye)
         MAK79_3_Mk_83_ = (7, Weapons.MAK79_3_Mk_83_)
-        Mk_83 = (7, Weapons.Mk_83)
-        GBU_12 = (7, Weapons.GBU_12)
-        GBU_16 = (7, Weapons.GBU_16)
-        LAU_10___4_ZUNI_MK_71_ = (7, Weapons.LAU_10___4_ZUNI_MK_71_)
-        Mk_20 = (7, Weapons.Mk_20)
-        ADM_141A_ = (7, Weapons.ADM_141A_)
-        Mk_84 = (7, Weapons.Mk_84)
-        GBU_10 = (7, Weapons.GBU_10)
         MAK79_2_MK_20_ = (7, Weapons.MAK79_2_MK_20_)
 
     class Pylon8:
@@ -11212,7 +11157,6 @@ class FA_18C_hornet(PlaneType):
                 NVG = 2
 
     livery_name = "FA-18C_HORNET"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9M_Sidewinder_IR_AAM = (1, Weapons.AIM_9M_Sidewinder_IR_AAM)
@@ -11599,7 +11543,6 @@ class Hawk(PlaneType):
     }
 
     livery_name = "HAWK"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LAU_7_with_AIM_9M_Sidewinder_IR_AAM = (1, Weapons.LAU_7_with_AIM_9M_Sidewinder_IR_AAM)
@@ -11665,7 +11608,6 @@ class I_16(PlaneType):
             id = "landingTorch"
 
     livery_name = "I-16"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         I16_RS_82 = (1, Weapons.I16_RS_82)
@@ -11773,11 +11715,10 @@ class L_39C(PlaneType):
             id = "DismountGunSight"
 
     livery_name = "L-39C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         FAB_100___100kg_GP_Bomb_LD = (1, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (1, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         P_50T___50kg_Practice_Bomb_LD = (1, Weapons.P_50T___50kg_Practice_Bomb_LD)
         Fuel_Tank_150_liters = (1, Weapons.Fuel_Tank_150_liters)
@@ -11799,7 +11740,7 @@ class L_39C(PlaneType):
 
     class Pylon3:
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag = (3, Weapons.UB_16UM_pod___16_x_S_5KO__57mm_UnGd_Rkts__HEAT_Frag)
         P_50T___50kg_Practice_Bomb_LD = (3, Weapons.P_50T___50kg_Practice_Bomb_LD)
         Fuel_Tank_150_liters = (3, Weapons.Fuel_Tank_150_liters)
@@ -11887,11 +11828,10 @@ class L_39ZA(PlaneType):
             id = "DismountIFRHood"
 
     livery_name = "L-39ZA"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         FAB_100___100kg_GP_Bomb_LD = (1, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (1, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (1, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
@@ -11910,7 +11850,7 @@ class L_39ZA(PlaneType):
 
     class Pylon2:
         FAB_100___100kg_GP_Bomb_LD = (2, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (2, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (2, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (2, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
@@ -11931,7 +11871,7 @@ class L_39ZA(PlaneType):
 
     class Pylon4:
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (4, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (4, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (4, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
@@ -11944,7 +11884,7 @@ class L_39ZA(PlaneType):
 
     class Pylon5:
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         FAB_250_M62___250kg_GP_Bomb_LD = (5, Weapons.FAB_250_M62___250kg_GP_Bomb_LD)
         OFAB_100_Jupiter___100kg_GP_Bomb_HD = (5, Weapons.OFAB_100_Jupiter___100kg_GP_Bomb_HD)
@@ -12097,7 +12037,6 @@ class M_2000C(PlaneType):
             id = "DisableVTBExport"
 
     livery_name = "M-2000C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Matra_Magic_II = (1, Weapons.Matra_Magic_II)
@@ -12364,7 +12303,6 @@ class MB_339A(PlaneType):
             id = "BombsRippleTiming"
 
     livery_name = "MB-339A"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Cylindrical_Tip_Tank_500lt = (1, Weapons.Cylindrical_Tip_Tank_500lt)
@@ -12374,9 +12312,9 @@ class MB_339A(PlaneType):
     class Pylon2:
         _14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons._14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         _14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD = (2, Weapons._14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD)
-        LR_25___25_x_ARF_8_M3_HEI_Heavy = (2, Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy)
-        LR_25___25_x_ARF_8_M3_API = (2, Weapons.LR_25___25_x_ARF_8_M3_API)
-        LR_25___25_x_ARF_8_M3_TP_SM = (2, Weapons.LR_25___25_x_ARF_8_M3_TP_SM)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (2, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = (2, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = (2, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM)
         Mk_81___250lb_GP_Bomb_LD = (2, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (2, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -12393,9 +12331,9 @@ class MB_339A(PlaneType):
         Fuel_Tank_330lt = (3, Weapons.Fuel_Tank_330lt)
         _14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons._14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         _14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD = (3, Weapons._14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD)
-        LR_25___25_x_ARF_8_M3_HEI_Heavy = (3, Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy)
-        LR_25___25_x_ARF_8_M3_API = (3, Weapons.LR_25___25_x_ARF_8_M3_API)
-        LR_25___25_x_ARF_8_M3_TP_SM = (3, Weapons.LR_25___25_x_ARF_8_M3_TP_SM)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (3, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = (3, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = (3, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM)
         Mk_81___250lb_GP_Bomb_LD = (3, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (3, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -12419,9 +12357,9 @@ class MB_339A(PlaneType):
         Photo_Recon_Pod__4_70mm_Vinten_Cameras_ = (4, Weapons.Photo_Recon_Pod__4_70mm_Vinten_Cameras_)
         AN_M3_Gunpod_Left = (4, Weapons.AN_M3_Gunpod_Left)
         DEFA553_Gunpod_Left = (4, Weapons.DEFA553_Gunpod_Left)
-        LR_25___25_x_ARF_8_M3_HEI_Heavy = (4, Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy)
-        LR_25___25_x_ARF_8_M3_API = (4, Weapons.LR_25___25_x_ARF_8_M3_API)
-        LR_25___25_x_ARF_8_M3_TP_SM = (4, Weapons.LR_25___25_x_ARF_8_M3_TP_SM)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (4, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = (4, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = (4, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM)
         Mk_81___250lb_GP_Bomb_LD = (4, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (4, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (4, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -12437,9 +12375,9 @@ class MB_339A(PlaneType):
         Luggage_Container = (7, Weapons.Luggage_Container)
         AN_M3_Gunpod_Right = (7, Weapons.AN_M3_Gunpod_Right)
         DEFA553_Gunpod_Right = (7, Weapons.DEFA553_Gunpod_Right)
-        LR_25___25_x_ARF_8_M3_HEI_Heavy = (7, Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy)
-        LR_25___25_x_ARF_8_M3_API = (7, Weapons.LR_25___25_x_ARF_8_M3_API)
-        LR_25___25_x_ARF_8_M3_TP_SM = (7, Weapons.LR_25___25_x_ARF_8_M3_TP_SM)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (7, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = (7, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = (7, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM)
         Mk_81___250lb_GP_Bomb_LD = (7, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (7, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (7, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -12453,9 +12391,9 @@ class MB_339A(PlaneType):
         Fuel_Tank_330lt = (8, Weapons.Fuel_Tank_330lt)
         _14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (8, Weapons._14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         _14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD = (8, Weapons._14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD)
-        LR_25___25_x_ARF_8_M3_HEI_Heavy = (8, Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy)
-        LR_25___25_x_ARF_8_M3_API = (8, Weapons.LR_25___25_x_ARF_8_M3_API)
-        LR_25___25_x_ARF_8_M3_TP_SM = (8, Weapons.LR_25___25_x_ARF_8_M3_TP_SM)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (8, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = (8, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = (8, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM)
         Mk_81___250lb_GP_Bomb_LD = (8, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (8, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (8, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -12475,9 +12413,9 @@ class MB_339A(PlaneType):
     class Pylon9:
         _14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (9, Weapons._14_3_M2___6_x_BAP_100___32kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         _14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD = (9, Weapons._14_3_M2___6_x_BAT_120_ABL___34kg_HE_Frag_Chute_Retarded_Bomb_HD)
-        LR_25___25_x_ARF_8_M3_HEI_Heavy = (9, Weapons.LR_25___25_x_ARF_8_M3_HEI_Heavy)
-        LR_25___25_x_ARF_8_M3_API = (9, Weapons.LR_25___25_x_ARF_8_M3_API)
-        LR_25___25_x_ARF_8_M3_TP_SM = (9, Weapons.LR_25___25_x_ARF_8_M3_TP_SM)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy = (9, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_HEI_Heavy)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API = (9, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_API)
+        LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM = (9, Weapons.LR_25___25_x_UnGd_Rkts__50_mm_ARF_8_M3_TP_SM)
         Mk_81___250lb_GP_Bomb_LD = (9, Weapons.Mk_81___250lb_GP_Bomb_LD)
         Mk_82___500lb_GP_Bomb_LD = (9, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_82_Snakeye___500lb_GP_Bomb_HD = (9, Weapons.Mk_82_Snakeye___500lb_GP_Bomb_HD)
@@ -12595,7 +12533,6 @@ class MB_339APAN(PlaneType):
             id = "UnlimitedSmoke"
 
     livery_name = "MB-339APAN"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Cylindrical_Tip_Tank_500lt = (1, Weapons.Cylindrical_Tip_Tank_500lt)
@@ -12650,7 +12587,6 @@ class MQ_9_Reaper(PlaneType):
     eplrs = True
 
     livery_name = "MQ-9 REAPER"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         GBU_12___500lb_Laser_Guided_Bomb = (1, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
@@ -12692,7 +12628,6 @@ class MiG_15bis(PlaneType):
     radio_frequency = 3.75
 
     livery_name = "MIG-15BIS"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         FAB_50 = (1, Weapons.FAB_50)
@@ -12772,7 +12707,6 @@ class MiG_19P(PlaneType):
                 NEAR = 2
 
     livery_name = "MIG-19P"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         K_13A = (1, Weapons.K_13A)
@@ -12861,7 +12795,6 @@ class MiG_21Bis(PlaneType):
     }
 
     livery_name = "MIG-21BIS"  # from livery_entry
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         UB_16UM___16_S_5M = (1, Weapons.UB_16UM___16_S_5M)
@@ -12871,7 +12804,7 @@ class MiG_21Bis(PlaneType):
         FAB_250___250kg_GP_Bomb_LD = (1, Weapons.FAB_250___250kg_GP_Bomb_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (1, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         FAB_250_M54_TU___235_kg__bomb__parachute = (1, Weapons.FAB_250_M54_TU___235_kg__bomb__parachute)
-        SAB_100___100kg_flare_illumination_Bomb = (1, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (1, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         R_13M___AAM__IR_guided = (1, Weapons.R_13M___AAM__IR_guided)
         R_13M1___AAM__IR_guided = (1, Weapons.R_13M1___AAM__IR_guided)
         R_3R___AAM__radar_guided = (1, Weapons.R_3R___AAM__radar_guided)
@@ -12897,7 +12830,7 @@ class MiG_21Bis(PlaneType):
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (2, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (2, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (2, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
-        SAB_100___100kg_flare_illumination_Bomb = (2, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (2, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         Kh_66_Grom__21____AGM__radar_guided_APU_68 = (2, Weapons.Kh_66_Grom__21____AGM__radar_guided_APU_68)
         R_13M___AAM__IR_guided = (2, Weapons.R_13M___AAM__IR_guided)
         R_13M1___AAM__IR_guided = (2, Weapons.R_13M1___AAM__IR_guided)
@@ -12932,7 +12865,7 @@ class MiG_21Bis(PlaneType):
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (4, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP = (4, Weapons.RBK_500_255___30_x_PTAB_10_5__500kg_CBU_Heavy_HEAT_AP)
         BL_755_CBU___450kg__147_Frag_Pen_bomblets = (4, Weapons.BL_755_CBU___450kg__147_Frag_Pen_bomblets)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         Kh_66_Grom__21____AGM__radar_guided_APU_68 = (4, Weapons.Kh_66_Grom__21____AGM__radar_guided_APU_68)
         R_13M___AAM__IR_guided = (4, Weapons.R_13M___AAM__IR_guided)
         R_13M1___AAM__IR_guided = (4, Weapons.R_13M1___AAM__IR_guided)
@@ -12954,7 +12887,7 @@ class MiG_21Bis(PlaneType):
         FAB_250___250kg_GP_Bomb_LD = (5, Weapons.FAB_250___250kg_GP_Bomb_LD)
         RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP = (5, Weapons.RBK_250___42_x_PTAB_2_5M__250kg_CBU_Medium_HEAT_AP)
         FAB_250_M54_TU___235_kg__bomb__parachute = (5, Weapons.FAB_250_M54_TU___235_kg__bomb__parachute)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         R_13M___AAM__IR_guided = (5, Weapons.R_13M___AAM__IR_guided)
         R_13M1___AAM__IR_guided = (5, Weapons.R_13M1___AAM__IR_guided)
         R_3R___AAM__radar_guided = (5, Weapons.R_3R___AAM__radar_guided)
@@ -13047,6 +12980,7 @@ class Mirage_F1C(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -13070,6 +13004,13 @@ class Mirage_F1C(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -13171,7 +13112,6 @@ class Mirage_F1C(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1C"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -13185,26 +13125,26 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -13214,26 +13154,26 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -13254,10 +13194,6 @@ class Mirage_F1C(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
-        BR_250 = (4, Weapons.BR_250)
-        BR_500 = (4, Weapons.BR_500)
-        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
-        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -13269,26 +13205,26 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -13303,26 +13239,26 @@ class Mirage_F1C(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -13403,6 +13339,7 @@ class Mirage_F1CE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -13426,6 +13363,13 @@ class Mirage_F1CE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -13527,7 +13471,6 @@ class Mirage_F1CE(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CE"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -13545,26 +13488,26 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -13578,26 +13521,26 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13631,6 +13574,7 @@ class Mirage_F1CE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -13642,26 +13586,26 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -13682,26 +13626,26 @@ class Mirage_F1CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -13790,6 +13734,7 @@ class Mirage_F1EE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -13815,6 +13760,13 @@ class Mirage_F1EE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -13930,7 +13882,6 @@ class Mirage_F1EE(PlaneType):
                 BF = "BF"
 
     livery_name = "MIRAGE-F1EE"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -13948,26 +13899,26 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -13982,26 +13933,26 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -14035,6 +13986,7 @@ class Mirage_F1EE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -14046,26 +13998,26 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -14086,26 +14038,26 @@ class Mirage_F1EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -14194,6 +14146,7 @@ class Mirage_F1M_EE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -14217,6 +14170,13 @@ class Mirage_F1M_EE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -14318,7 +14278,6 @@ class Mirage_F1M_EE(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1M-EE"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -14336,26 +14295,26 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -14370,26 +14329,26 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -14423,6 +14382,7 @@ class Mirage_F1M_EE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -14434,26 +14394,26 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -14474,26 +14434,26 @@ class Mirage_F1M_EE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -14582,6 +14542,7 @@ class Mirage_F1M_CE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -14605,6 +14566,13 @@ class Mirage_F1M_CE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -14706,7 +14674,6 @@ class Mirage_F1M_CE(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1M-CE"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -14724,26 +14691,26 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -14757,26 +14724,26 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -14810,6 +14777,7 @@ class Mirage_F1M_CE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -14821,26 +14789,26 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -14861,26 +14829,26 @@ class Mirage_F1M_CE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -14968,6 +14936,7 @@ class Mirage_F1C_200(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -14991,6 +14960,13 @@ class Mirage_F1C_200(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -15092,7 +15068,6 @@ class Mirage_F1C_200(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1C-200"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -15105,26 +15080,26 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -15134,26 +15109,26 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -15189,26 +15164,26 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -15223,26 +15198,26 @@ class Mirage_F1C_200(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -15321,6 +15296,7 @@ class Mirage_F1EH(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -15344,6 +15320,13 @@ class Mirage_F1EH(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -15445,7 +15428,6 @@ class Mirage_F1EH(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1EH"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -15458,26 +15440,26 @@ class Mirage_F1EH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -15487,26 +15469,26 @@ class Mirage_F1EH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -15542,26 +15524,26 @@ class Mirage_F1EH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -15576,26 +15558,26 @@ class Mirage_F1EH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -15674,6 +15656,7 @@ class Mirage_F1CH(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -15697,6 +15680,13 @@ class Mirage_F1CH(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -15798,7 +15788,6 @@ class Mirage_F1CH(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CH"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -15811,26 +15800,26 @@ class Mirage_F1CH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -15840,26 +15829,26 @@ class Mirage_F1CH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -15895,26 +15884,26 @@ class Mirage_F1CH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -15929,26 +15918,26 @@ class Mirage_F1CH(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -16027,6 +16016,7 @@ class Mirage_F1JA(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -16050,6 +16040,13 @@ class Mirage_F1JA(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16151,10 +16148,6 @@ class Mirage_F1JA(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1JA"  # from type
-    Liveries = Liveries()[livery_name]
-
-    class Pylon1:
-        R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
 
     class Pylon2:
         SAMP_125___125_kg_GP_Bomb_LD = (2, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16164,26 +16157,27 @@ class Mirage_F1JA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        DIS_PL_8B = (2, Weapons.DIS_PL_8B)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16193,31 +16187,28 @@ class Mirage_F1JA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
-        R530F_EM = (3, Weapons.R530F_EM)
-        R530F_IR = (3, Weapons.R530F_IR)
-        S530F = (3, Weapons.S530F)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -16233,12 +16224,6 @@ class Mirage_F1JA(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
-        BR_250 = (4, Weapons.BR_250)
-        BR_500 = (4, Weapons.BR_500)
-        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
-        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
-        R530F_EM = (4, Weapons.R530F_EM)
-        R530F_IR = (4, Weapons.R530F_IR)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16248,31 +16233,28 @@ class Mirage_F1JA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
-        R530F_EM = (5, Weapons.R530F_EM)
-        R530F_IR = (5, Weapons.R530F_IR)
-        S530F = (5, Weapons.S530F)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16282,31 +16264,29 @@ class Mirage_F1JA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        DIS_PL_8B = (6, Weapons.DIS_PL_8B)
 
-    class Pylon7:
-        R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
-
-    pylons: Set[int] = {1, 2, 3, 4, 5, 6, 7}
+    pylons: Set[int] = {2, 3, 4, 5, 6}
 
     tasks = [task.GroundAttack, task.RunwayAttack, task.PinpointStrike, task.CAS, task.AFAC, task.CAP, task.Escort, task.FighterSweep, task.Intercept]
     task_default = task.CAP
@@ -16380,6 +16360,7 @@ class Mirage_F1CG(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -16403,6 +16384,13 @@ class Mirage_F1CG(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16504,7 +16492,6 @@ class Mirage_F1CG(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CG"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -16519,26 +16506,26 @@ class Mirage_F1CG(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         AIM_9B_Sidewinder_IR_AAM = (2, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (2, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (2, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
@@ -16551,26 +16538,26 @@ class Mirage_F1CG(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -16606,26 +16593,26 @@ class Mirage_F1CG(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -16640,26 +16627,26 @@ class Mirage_F1CG(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         AIM_9B_Sidewinder_IR_AAM = (6, Weapons.AIM_9B_Sidewinder_IR_AAM)
         AIM_9J_Sidewinder_IR_AAM = (6, Weapons.AIM_9J_Sidewinder_IR_AAM)
         AIM_9JULI_Sidewinder_IR_AAM = (6, Weapons.AIM_9JULI_Sidewinder_IR_AAM)
@@ -16743,6 +16730,7 @@ class Mirage_F1CZ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -16766,6 +16754,13 @@ class Mirage_F1CZ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -16867,7 +16862,6 @@ class Mirage_F1CZ(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CZ"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -16880,26 +16874,26 @@ class Mirage_F1CZ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -16909,26 +16903,26 @@ class Mirage_F1CZ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -16964,26 +16958,26 @@ class Mirage_F1CZ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -16998,26 +16992,26 @@ class Mirage_F1CZ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -17096,6 +17090,7 @@ class Mirage_F1CJ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -17119,6 +17114,13 @@ class Mirage_F1CJ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17220,7 +17222,6 @@ class Mirage_F1CJ(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CJ"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -17233,26 +17234,26 @@ class Mirage_F1CJ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17262,26 +17263,26 @@ class Mirage_F1CJ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -17317,26 +17318,26 @@ class Mirage_F1CJ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -17351,26 +17352,26 @@ class Mirage_F1CJ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -17449,6 +17450,7 @@ class Mirage_F1CK(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -17472,6 +17474,13 @@ class Mirage_F1CK(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17573,7 +17582,6 @@ class Mirage_F1CK(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CK"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -17586,26 +17594,26 @@ class Mirage_F1CK(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -17615,26 +17623,26 @@ class Mirage_F1CK(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -17670,26 +17678,26 @@ class Mirage_F1CK(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -17704,26 +17712,26 @@ class Mirage_F1CK(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -17802,6 +17810,7 @@ class Mirage_F1EQ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -17825,6 +17834,13 @@ class Mirage_F1EQ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -17926,7 +17942,6 @@ class Mirage_F1EQ(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1EQ"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -17940,26 +17955,26 @@ class Mirage_F1EQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -17973,26 +17988,26 @@ class Mirage_F1EQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -18002,6 +18017,8 @@ class Mirage_F1EQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -18024,6 +18041,8 @@ class Mirage_F1EQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18033,26 +18052,26 @@ class Mirage_F1EQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -18062,6 +18081,8 @@ class Mirage_F1EQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18071,26 +18092,26 @@ class Mirage_F1EQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -18174,6 +18195,7 @@ class Mirage_F1ED(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -18197,6 +18219,13 @@ class Mirage_F1ED(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18298,7 +18327,6 @@ class Mirage_F1ED(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1ED"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -18312,26 +18340,26 @@ class Mirage_F1ED(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -18345,26 +18373,26 @@ class Mirage_F1ED(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -18374,6 +18402,8 @@ class Mirage_F1ED(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -18396,6 +18426,8 @@ class Mirage_F1ED(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18405,26 +18437,26 @@ class Mirage_F1ED(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -18434,6 +18466,8 @@ class Mirage_F1ED(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -18443,26 +18477,26 @@ class Mirage_F1ED(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -18546,6 +18580,7 @@ class Mirage_F1EDA(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -18569,6 +18604,13 @@ class Mirage_F1EDA(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -18670,7 +18712,6 @@ class Mirage_F1EDA(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1EDA"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -18683,26 +18724,26 @@ class Mirage_F1EDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -18716,26 +18757,26 @@ class Mirage_F1EDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -18776,26 +18817,26 @@ class Mirage_F1EDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -18814,26 +18855,26 @@ class Mirage_F1EDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -18916,6 +18957,7 @@ class Mirage_F1CR(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -18939,6 +18981,13 @@ class Mirage_F1CR(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19040,7 +19089,6 @@ class Mirage_F1CR(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CR"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -19054,26 +19102,26 @@ class Mirage_F1CR(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19083,26 +19131,26 @@ class Mirage_F1CR(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -19137,26 +19185,26 @@ class Mirage_F1CR(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
@@ -19170,26 +19218,26 @@ class Mirage_F1CR(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -19269,6 +19317,7 @@ class Mirage_F1CT(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -19292,6 +19341,13 @@ class Mirage_F1CT(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19393,7 +19449,6 @@ class Mirage_F1CT(PlaneType):
             id = "LaserCode1"
 
     livery_name = "MIRAGE-F1CT"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -19407,26 +19462,26 @@ class Mirage_F1CT(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19436,29 +19491,31 @@ class Mirage_F1CT(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         S530F = (3, Weapons.S530F)
+        GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
+        GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -19474,6 +19531,8 @@ class Mirage_F1CT(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
+        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
+        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
         PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
@@ -19485,29 +19544,31 @@ class Mirage_F1CT(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         S530F = (5, Weapons.S530F)
+        GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
+        GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19517,26 +19578,26 @@ class Mirage_F1CT(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -19616,6 +19677,7 @@ class Mirage_F1B(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -19640,6 +19702,13 @@ class Mirage_F1B(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -19744,7 +19813,6 @@ class Mirage_F1B(PlaneType):
             id = "SoloFlight"
 
     livery_name = "MIRAGE-F1B"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -19758,26 +19826,26 @@ class Mirage_F1B(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon3:
         SAMP_125___125_kg_GP_Bomb_LD = (3, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -19787,26 +19855,26 @@ class Mirage_F1B(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (3, Weapons.R530F_EM)
@@ -19827,10 +19895,6 @@ class Mirage_F1B(PlaneType):
         CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (4, Weapons.CLB_4___4_x_SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         PTB_1200_F1 = (4, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (4, Weapons.PTB_1200_F1_EMPTY)
-        BR_250 = (4, Weapons.BR_250)
-        BR_500 = (4, Weapons.BR_500)
-        GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
-        GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -19842,26 +19906,26 @@ class Mirage_F1B(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         R530F_EM = (5, Weapons.R530F_EM)
@@ -19876,26 +19940,26 @@ class Mirage_F1B(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
 
     class Pylon7:
         R550_Magic_1_IR_AAM = (7, Weapons.R550_Magic_1_IR_AAM)
@@ -19975,6 +20039,7 @@ class Mirage_F1BE(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -19999,6 +20064,13 @@ class Mirage_F1BE(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20103,7 +20175,6 @@ class Mirage_F1BE(PlaneType):
             id = "SoloFlight"
 
     livery_name = "MIRAGE-F1BE"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         AIM_9B_Sidewinder_IR_AAM = (1, Weapons.AIM_9B_Sidewinder_IR_AAM)
@@ -20121,26 +20192,26 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -20154,26 +20225,26 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20207,6 +20278,7 @@ class Mirage_F1BE(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        CLB4_BR250 = (4, Weapons.CLB4_BR250)
         R530F_EM = (4, Weapons.R530F_EM)
         R530F_IR = (4, Weapons.R530F_IR)
 
@@ -20218,26 +20290,26 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20258,26 +20330,26 @@ class Mirage_F1BE(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -20365,6 +20437,7 @@ class Mirage_F1BQ(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -20389,6 +20462,13 @@ class Mirage_F1BQ(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20493,7 +20573,6 @@ class Mirage_F1BQ(PlaneType):
             id = "SoloFlight"
 
     livery_name = "MIRAGE-F1BQ"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -20507,26 +20586,26 @@ class Mirage_F1BQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -20540,26 +20619,26 @@ class Mirage_F1BQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20569,6 +20648,8 @@ class Mirage_F1BQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -20591,6 +20672,8 @@ class Mirage_F1BQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20600,26 +20683,26 @@ class Mirage_F1BQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20629,6 +20712,8 @@ class Mirage_F1BQ(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20638,26 +20723,26 @@ class Mirage_F1BQ(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -20741,6 +20826,7 @@ class Mirage_F1BD(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -20765,6 +20851,13 @@ class Mirage_F1BD(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -20869,7 +20962,6 @@ class Mirage_F1BD(PlaneType):
             id = "SoloFlight"
 
     livery_name = "MIRAGE-F1BD"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -20883,26 +20975,26 @@ class Mirage_F1BD(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -20916,26 +21008,26 @@ class Mirage_F1BD(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -20945,6 +21037,8 @@ class Mirage_F1BD(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (3, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (3, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (3, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (3, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (3, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon4:
         SAMP_250___250_kg_GP_Bomb_LD = (4, Weapons.SAMP_250___250_kg_GP_Bomb_LD)
@@ -20967,6 +21061,8 @@ class Mirage_F1BD(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (4, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (4, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD = (4, Weapons.CLB_4___4_x_Mk_82___500lb_GP_Bomb_LD)
+        PTB_580G_F1 = (4, Weapons.PTB_580G_F1)
+        PTB_580G_F1_EMPTY = (4, Weapons.PTB_580G_F1_EMPTY)
 
     class Pylon5:
         SAMP_125___125_kg_GP_Bomb_LD = (5, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -20976,26 +21072,26 @@ class Mirage_F1BD(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -21005,6 +21101,8 @@ class Mirage_F1BD(PlaneType):
         GBU_10___2000lb_Laser_Guided_Bomb = (5, Weapons.GBU_10___2000lb_Laser_Guided_Bomb)
         GBU_12___500lb_Laser_Guided_Bomb = (5, Weapons.GBU_12___500lb_Laser_Guided_Bomb)
         S530F = (5, Weapons.S530F)
+        Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__ = (5, Weapons.Kh_29L__AS_14_Kedge____657kg__ASM__Semi_Act_Laser__)
+        Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__ = (5, Weapons.Kh_29T__AS_14_Kedge____670kg__ASM__TV_Guided__)
 
     class Pylon6:
         SAMP_125___125_kg_GP_Bomb_LD = (6, Weapons.SAMP_125___125_kg_GP_Bomb_LD)
@@ -21014,26 +21112,26 @@ class Mirage_F1BD(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -21117,6 +21215,7 @@ class Mirage_F1DDA(PlaneType):
 
     property_defaults: Dict[str, Any] = {
         "RadarCoverSettings": 1,
+        "MissSimplLock": 1,
         "ChaffMultiNumber": 1,
         "ChaffMultiTime": 1,
         "ChaffProgramNumber": 1,
@@ -21141,6 +21240,13 @@ class Mirage_F1DDA(PlaneType):
                 NO = 1
                 FORCE_ON = 2
                 FORCE_OFF = 3
+
+        class MissSimplLock:
+            id = "MissSimplLock"
+
+            class Values:
+                NO = 1
+                YES = 2
 
         class ChaffMultiNumber:
             id = "ChaffMultiNumber"
@@ -21245,7 +21351,6 @@ class Mirage_F1DDA(PlaneType):
             id = "SoloFlight"
 
     livery_name = "MIRAGE-F1DDA"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R550_Magic_1_IR_AAM = (1, Weapons.R550_Magic_1_IR_AAM)
@@ -21258,26 +21363,26 @@ class Mirage_F1DDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (2, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (2, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (2, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (2, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (2, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (2, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (2, Weapons.BR_250)
@@ -21291,26 +21396,26 @@ class Mirage_F1DDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (3, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (3, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (3, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (3, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (3, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (3, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (3, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -21351,26 +21456,26 @@ class Mirage_F1DDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (5, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (5, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (5, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (5, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         PTB_1200_F1 = (5, Weapons.PTB_1200_F1)
         PTB_1200_F1_EMPTY = (5, Weapons.PTB_1200_F1_EMPTY)
         Mk_82___500lb_GP_Bomb_LD = (5, Weapons.Mk_82___500lb_GP_Bomb_LD)
@@ -21389,26 +21494,26 @@ class Mirage_F1DDA(PlaneType):
         SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD = (6, Weapons.SAMP_400___400_kg_GP_Chute_Retarded_Bomb_HD)
         BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster = (6, Weapons.BLU_107_B_Durandal___219kg_Concrete_Piercing_Chute_Retarded_Bomb_w_Booster)
         Belouga = (6, Weapons.Belouga)
-        MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_68_mm_SNEB_Type_259E_F1B_IL)
-        MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_250_F1B_TP_SM)
-        MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_251_F1B_HE)
-        MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_252_F1B_TP)
-        MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_253_F1B_HEAT)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Red)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Yellow)
-        MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_254_F1B_SM_Green)
-        MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_256_F1B_HE_Frag)
-        MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
-        MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F1___36_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_250_F1B_TP_SM)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_251_F1B_HE)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_252_F1B_TP)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_253_F1B_HEAT)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Red)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Yellow)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_254_F1B_SM_Green)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_256_F1B_HE_Frag)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_257_F1B_HE_Frag_Lg_Whd)
+        MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL = (6, Weapons.MATRA_F4___18_x_UnGd_Rkts__68_mm_SNEB_Type_259E_F1B_IL)
         Mk_82___500lb_GP_Bomb_LD = (6, Weapons.Mk_82___500lb_GP_Bomb_LD)
         Mk_83___1000lb_GP_Bomb_LD = (6, Weapons.Mk_83___1000lb_GP_Bomb_LD)
         BR_250 = (6, Weapons.BR_250)
@@ -21437,7 +21542,6 @@ class Su_34(PlaneType):
     flare_charge_size = 1
 
     livery_name = "SU-34"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         R_73__AA_11_Archer____Infra_Red = (1, Weapons.R_73__AA_11_Archer____Infra_Red)
@@ -21455,7 +21559,7 @@ class Su_34(PlaneType):
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__ = (3, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (3, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (3, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (3, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (3, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (3, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (3, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (3, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -21472,7 +21576,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (3, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (3, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (3, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (3, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (3, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (3, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (3, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (3, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
@@ -21492,7 +21596,7 @@ class Su_34(PlaneType):
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__ = (4, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (4, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (4, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (4, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (4, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (4, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (4, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (4, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -21509,7 +21613,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (4, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (4, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (4, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (4, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (4, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (4, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (4, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (4, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
@@ -21550,7 +21654,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (5, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (5, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (5, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (5, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (5, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (5, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (5, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
 
@@ -21568,7 +21672,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (6, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (6, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (6, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (6, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (6, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (6, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (6, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (6, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -21588,7 +21692,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (7, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (7, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (7, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (7, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (7, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (7, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (7, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         R_27R__AA_10_Alamo_A____Semi_Act_Rdr = (7, Weapons.R_27R__AA_10_Alamo_A____Semi_Act_Rdr)
@@ -21623,7 +21727,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (8, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (8, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (8, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (8, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (8, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (8, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (8, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
 
@@ -21634,7 +21738,7 @@ class Su_34(PlaneType):
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__ = (9, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (9, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (9, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (9, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (9, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (9, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (9, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (9, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -21651,7 +21755,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (9, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (9, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (9, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (9, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (9, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (9, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (9, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (9, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
@@ -21675,7 +21779,7 @@ class Su_34(PlaneType):
         Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__ = (10, Weapons.Kh_31P__AS_17_Krypton____600kg__ARM__IN__Pas_Rdr__)
         Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr = (10, Weapons.Kh_35__AS_20_Kayak____520kg__AShM__IN__Act_Rdr)
         Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_ = (10, Weapons.Kh_58U__AS_11_Kilter____640kg__ARM__IN__Pas_Rdr_)
-        B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP = (10, Weapons.B_8M1_pod___20_x_S_8KOM__80mm_UnGd_Rkts__HEAT_AP)
+        B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag = (10, Weapons.B_8M1___20_x_UnGd_Rkts__80_mm_S_8KOM_HEAT_Frag)
         B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag = (10, Weapons.B_13L_pod___5_x_S_13_OF__122mm_UnGd_Rkts__Blast_Frag)
         S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator = (10, Weapons.S_25_OFM___340mm_UnGd_Rkt__480kg_Penetrator)
         S_25_O___420mm_UnGd_Rkt__380kg_Frag = (10, Weapons.S_25_O___420mm_UnGd_Rkt__380kg_Frag)
@@ -21692,7 +21796,7 @@ class Su_34(PlaneType):
         KAB_500LG___500kg_Laser_Guided_Bomb = (10, Weapons.KAB_500LG___500kg_Laser_Guided_Bomb)
         KAB_500Kr___500kg_TV_Guided_Bomb = (10, Weapons.KAB_500Kr___500kg_TV_Guided_Bomb)
         KAB_500S___500kg_GPS_Guided_Bomb = (10, Weapons.KAB_500S___500kg_GPS_Guided_Bomb)
-        SAB_100___100kg_flare_illumination_Bomb = (10, Weapons.SAB_100___100kg_flare_illumination_Bomb)
+        SAB_100MN___100_kg_Illumination_Bomb = (10, Weapons.SAB_100MN___100_kg_Illumination_Bomb)
         FAB_100___100kg_GP_Bomb_LD = (10, Weapons.FAB_100___100kg_GP_Bomb_LD)
         MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD = (10, Weapons.MBD3_U6_68_with_6_x_FAB_100___100kg_GP_Bombs_LD)
         KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag = (10, Weapons.KMGU_2___96_x_AO_2_5RT_Dispenser__CBU__HE_Frag)
@@ -21773,7 +21877,6 @@ class Yak_52(PlaneType):
                 Equally_Responsible = -2
 
     livery_name = "YAK-52"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         Smoke_Generator___red_ = (1, Weapons.Smoke_Generator___red_)
@@ -21806,7 +21909,6 @@ class B_17G(PlaneType):
     }
 
     livery_name = "B-17G"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         _12_AN_M64___500lb_GP_Bomb_LD = (1, Weapons._12_AN_M64___500lb_GP_Bomb_LD)
@@ -21834,7 +21936,6 @@ class Ju_88A4(PlaneType):
     }
 
     livery_name = "JU-88A4"  # from type
-    Liveries = Liveries()[livery_name]
 
     class Pylon1:
         LTF_5b_Aerial_Torpedo = (1, Weapons.LTF_5b_Aerial_Torpedo)
@@ -21886,7 +21987,6 @@ class C_47(PlaneType):
     }
 
     livery_name = "C-47"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
@@ -21921,7 +22021,6 @@ class TF_51D(PlaneType):
     }
 
     livery_name = "TF-51D"  # from type
-    Liveries = Liveries()[livery_name]
 
     pylons: Set[int] = set()
 
