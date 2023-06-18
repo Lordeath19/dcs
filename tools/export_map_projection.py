@@ -42,6 +42,7 @@ from dcs.terrain.falklands import Falklands
 from dcs.terrain.nevada import Nevada
 from dcs.terrain.normandy import Normandy
 from dcs.terrain.persiangulf import PersianGulf
+from dcs.terrain.sinai import Sinai
 from dcs.terrain.syria import Syria
 from dcs.terrain.terrain import Terrain
 from dcs.terrain.thechannel import TheChannel
@@ -55,7 +56,7 @@ JSON_LUA = THIS_DIR / "json.lua"
 EXPORT_LUA = THIS_DIR / "coord_export.lua"
 DCS_SAVED_GAMES = Path.home() / "Saved Games/DCS"
 SRC_ROOT = THIS_DIR.parent
-EXPORT_DIR = SRC_ROOT / "dcs/terrain/projections"
+EXPORT_DIR = SRC_ROOT / "dcs/terrain"
 
 
 ARG_TO_TERRAIN_MAP = {
@@ -65,22 +66,9 @@ ARG_TO_TERRAIN_MAP = {
     "normandy": Normandy(),
     "persiangulf": PersianGulf(),
     "thechannel": TheChannel(),
+    "sinai": Sinai(),
     "syria": Syria(),
     "marianaislands": MarianaIslands(),
-}
-
-# https://gisgeography.com/central-meridian/
-# UTM zones determined by guess and check. There are only a handful in the region for
-# each map and getting the wrong one will be flagged with errors when processing.
-CENTRAL_MERIDIANS = {
-    "caucasus": 33,
-    "falklands": -57,
-    "nevada": -117,
-    "normandy": -3,
-    "persiangulf": 57,
-    "thechannel": 3,
-    "syria": 39,
-    "marianaislands": 147,
 }
 
 
@@ -143,9 +131,12 @@ def test_for_errors(
     if not math.isclose(x, coords.x) or not math.isclose(z, coords.z):
         error_x = x - coords.x
         error_z = z - coords.z
-        error_pct_x = error_x / coords.x * 100
-        error_pct_z = error_z / coords.z * 100
-        print(f"{name} has error of {error_pct_x}% {error_pct_z}%")
+        try:
+            error_pct_x = error_x / coords.x * 100
+            error_pct_z = error_z / coords.z * 100
+        except ZeroDivisionError as ex:
+            raise RuntimeError(f"Unexpected 0 coordinate in {name}")
+        logging.debug(f"{name} has error of {error_pct_x}% {error_pct_z}%")
         errors = True
 
     lat, lon = x_z_to_lat_lon.transform(coords.x, coords.z)
@@ -156,7 +147,7 @@ def test_for_errors(
         error_lon = lon - coords.longitude
         error_pct_lon = error_lat / coords.latitude * 100
         error_pct_lat = error_lon / coords.longitude * 100
-        print(f"{name} has error of {error_pct_lat}% {error_pct_lon}%")
+        logging.debug(f"{name} has error of {error_pct_lat}% {error_pct_lon}%")
         errors = True
 
     return errors
@@ -173,6 +164,9 @@ def test_parameters(
     for name, coords in airbases.items():
         if name == "zero":
             continue
+        if name in {"Raj al Issa East", "Raj al Issa West"}:
+            # https://forum.dcs.world/topic/299885-raj-al-issa-west-east-markers/
+            continue
         if test_for_errors(name, lat_lon_to_x_z, x_z_to_lat_lon, coords):
             errors = True
     return errors
@@ -186,30 +180,34 @@ def compute_tmerc_parameters(
     airbases = load_coordinate_data(data)
     wgs84 = CRS("WGS84")
 
-    # Creates a transformer with 0 for the false easting and northing, but otherwise has
-    # the correct parameters. We'll use this to transform the zero point from the
-    # mission to calculate the error from the actual zero point to determine the correct
-    # false easting and northing.
-    bad = TransverseMercator(
-        central_meridian=CENTRAL_MERIDIANS[terrain],
-        false_easting=0,
-        false_northing=0,
-        scale_factor=0.9996,
-    ).to_crs()
-    zero_finder = Transformer.from_crs(wgs84, bad)
-    z, x = zero_finder.transform(airbases["zero"].latitude, airbases["zero"].longitude)
+    # UTM has a central meridian every 6 degrees from 177W to 177E.
+    # https://gisgeography.com/central-meridian/
+    for central_meridian in range(-177, 177 + 1, 6):
+        # Creates a transformer with 0 for the false easting and northing, but otherwise has
+        # the correct parameters. We'll use this to transform the zero point from the
+        # mission to calculate the error from the actual zero point to determine the correct
+        # false easting and northing.
+        bad = TransverseMercator(
+            central_meridian=central_meridian,
+            false_easting=0,
+            false_northing=0,
+            scale_factor=0.9996,
+        ).to_crs()
+        zero_finder = Transformer.from_crs(wgs84, bad)
+        z, x = zero_finder.transform(
+            airbases["zero"].latitude, airbases["zero"].longitude
+        )
 
-    parameters = TransverseMercator(
-        central_meridian=CENTRAL_MERIDIANS[terrain],
-        false_easting=-x,
-        false_northing=-z,
-        scale_factor=0.9996,
-    )
+        parameters = TransverseMercator(
+            central_meridian=central_meridian,
+            false_easting=-x,
+            false_northing=-z,
+            scale_factor=0.9996,
+        )
 
-    if test_parameters(airbases, parameters):
-        sys.exit("Found errors in projection parameters. Quitting.")
-
-    return parameters
+        if not test_parameters(airbases, parameters):
+            return parameters
+    sys.exit("Found errors in projection parameters. Quitting.")
 
 
 def replace_mission_scripting_file(install_dir: Path) -> Path:
@@ -275,12 +273,12 @@ def main() -> None:
     mission = create_mission(terrain)
     with mission_scripting(args.dcs):
         input(
-            f"Created {mission} and replaced MissionScript.lua. Open DCS and load the "
-            "mission. Once the mission starts running, close it and press enter."
+            f"Created {mission} and replaced MissionScripting.lua. Open DCS and load "
+            "the mission. Once the mission starts running, close it and press enter."
         )
     coords_path = DCS_SAVED_GAMES / "coords.json"
     parameters = compute_tmerc_parameters(coords_path, args.map)
-    out_file = EXPORT_DIR / f"{args.map}.py"
+    out_file = EXPORT_DIR / args.map / "projection.py"
     out_file.write_text(
         textwrap.dedent(
             f"""\

@@ -62,7 +62,7 @@ class RunwayApproach:
 
     @staticmethod
     def from_lua(name: str, beacons: Dict[str, List[RunwayBeacon]]) -> RunwayApproach:
-        return RunwayApproach(name, int(name.rstrip("LR")) * 10, beacons.get(name, []))
+        return RunwayApproach(name, int(name.rstrip("LCR")) * 10, beacons.get(name, []))
 
 
 @dataclass(frozen=True)
@@ -530,6 +530,12 @@ class Terrain:
         self._ll_to_point_transformer = Transformer.from_crs(
             CRS("WGS84"), self.projection_parameters.to_crs()
         )
+
+    @property
+    def miz_theatre_name(self) -> str:
+        # Sinai uses a different name for the "theatre" field (SinaiMap) than it does in
+        # the mods directory on disk (Sinai).
+        return self.name
 
     def weather(self, dt: datetime, weather_: weather.Weather):
         # check if there might be the season for thunderstorms
