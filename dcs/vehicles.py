@@ -333,7 +333,6 @@ class AirDefence:
         detection_range = 50000
         threat_range = 35000
         air_weapon_dist = 35000
-        munition_interceptor = True
 
     class Osa_9A33_ln(unittype.VehicleType):
         id = "Osa 9A33 ln"
