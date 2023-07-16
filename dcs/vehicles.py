@@ -600,6 +600,7 @@ class AirDefence:
         detection_range = 160000
         threat_range = 0
         air_weapon_dist = 0
+        munition_interceptor = True
 
     class S_300PS_40B6MD_sr(unittype.VehicleType):
         id = "S-300PS 40B6MD sr"
@@ -657,6 +658,7 @@ class AirDefence:
         detection_range = 160000
         threat_range = 0
         air_weapon_dist = 0
+        munition_interceptor = True
 
     class Hawk_cwar(unittype.VehicleType):
         id = "Hawk cwar"
