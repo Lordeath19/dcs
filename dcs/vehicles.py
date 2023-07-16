@@ -295,6 +295,7 @@ class AirDefence:
         detection_range = 18000
         threat_range = 8000
         air_weapon_dist = 8000
+        munition_interceptor = True
 
     class Kub_2P25_ln(unittype.VehicleType):
         id = "Kub 2P25 ln"
@@ -316,6 +317,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 120000
         air_weapon_dist = 120000
+        munition_interceptor = True
 
     class S_300PS_5P85D_ln(unittype.VehicleType):
         id = "S-300PS 5P85D ln"
@@ -323,6 +325,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 120000
         air_weapon_dist = 120000
+        munition_interceptor = True
 
     class SA_11_Buk_LN_9A310M1(unittype.VehicleType):
         id = "SA-11 Buk LN 9A310M1"
@@ -330,6 +333,7 @@ class AirDefence:
         detection_range = 50000
         threat_range = 35000
         air_weapon_dist = 35000
+        munition_interceptor = True
 
     class Osa_9A33_ln(unittype.VehicleType):
         id = "Osa 9A33 ln"
@@ -344,6 +348,7 @@ class AirDefence:
         detection_range = 25000
         threat_range = 12000
         air_weapon_dist = 12000
+        munition_interceptor = True
 
     class Strela_10M3(unittype.VehicleType):
         id = "Strela-10M3"
@@ -432,6 +437,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 100000
         air_weapon_dist = 100000
+        munition_interceptor = True
 
     class M1097_Avenger(unittype.VehicleType):
         id = "M1097 Avenger"
