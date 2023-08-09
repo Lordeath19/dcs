@@ -311,6 +311,7 @@ class AirDefence:
         threat_range = 18000
         air_weapon_dist = 18000
         movable = False
+        theoretically_movable = False
 
     class S_300PS_5P85C_ln(unittype.VehicleType):
         id = "S-300PS 5P85C ln"
@@ -532,6 +533,7 @@ class AirDefence:
         threat_range = 2500
         air_weapon_dist = 2500
         movable = False
+        theoretically_movable = False
 
     class ZU_23_Emplacement(unittype.VehicleType):
         id = "ZU-23 Emplacement"
@@ -554,6 +556,7 @@ class AirDefence:
         threat_range = 2500
         air_weapon_dist = 2500
         movable = False
+        theoretically_movable = False
 
     class Ural_375_ZU_23_Insurgent(unittype.VehicleType):
         id = "Ural-375 ZU-23 Insurgent"
@@ -779,6 +782,7 @@ class AirDefence:
         air_weapon_dist = 0
         eplrs = True
         movable = False
+        theoretically_movable = False
 
     class NASAMS_Command_Post(unittype.VehicleType):
         id = "NASAMS_Command_Post"
@@ -788,6 +792,7 @@ class AirDefence:
         air_weapon_dist = 0
         eplrs = True
         movable = False
+        theoretically_movable = False
 
     class NASAMS_LN_B(unittype.VehicleType):
         id = "NASAMS_LN_B"
@@ -796,6 +801,7 @@ class AirDefence:
         threat_range = 15000
         air_weapon_dist = 15000
         movable = False
+        theoretically_movable = False
 
     class NASAMS_LN_C(unittype.VehicleType):
         id = "NASAMS_LN_C"
@@ -804,6 +810,7 @@ class AirDefence:
         threat_range = 15000
         air_weapon_dist = 15000
         movable = False
+        theoretically_movable = False
 
     class FPS_117_Dome(unittype.VehicleType):
         id = "FPS-117 Dome"
@@ -812,6 +819,7 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class FPS_117_ECS(unittype.VehicleType):
         id = "FPS-117 ECS"
@@ -821,6 +829,7 @@ class AirDefence:
         air_weapon_dist = 0
         eplrs = True
         movable = False
+        theoretically_movable = False
 
     class FPS_117(unittype.VehicleType):
         id = "FPS-117"
@@ -829,6 +838,7 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class RD_75(unittype.VehicleType):
         id = "RD_75"
@@ -846,6 +856,7 @@ class AirDefence:
         threat_range = 43000
         air_weapon_dist = 43000
         movable = False
+        theoretically_movable = False
 
     class SNR_75V(unittype.VehicleType):
         id = "SNR_75V"
@@ -872,6 +883,7 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class S_200_Launcher(unittype.VehicleType):
         id = "S-200_Launcher"
@@ -880,6 +892,7 @@ class AirDefence:
         threat_range = 255000
         air_weapon_dist = 255000
         movable = False
+        theoretically_movable = False
 
     class ZSU_57_2(unittype.VehicleType):
         id = "ZSU_57_2"
@@ -911,6 +924,7 @@ class AirDefence:
         threat_range = 6800
         air_weapon_dist = 6800
         movable = False
+        theoretically_movable = False
 
     class Rapier_fsa_optical_tracker_unit(unittype.VehicleType):
         id = "rapier_fsa_optical_tracker_unit"
@@ -919,6 +933,7 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class Rapier_fsa_blindfire_radar(unittype.VehicleType):
         id = "rapier_fsa_blindfire_radar"
@@ -927,6 +942,7 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class Bofors40(unittype.VehicleType):
         id = "bofors40"
@@ -1077,6 +1093,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class Sandbox(unittype.VehicleType):
         id = "Sandbox"
@@ -1085,6 +1102,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class House1arm(unittype.VehicleType):
         id = "house1arm"
@@ -1093,6 +1111,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class House2arm(unittype.VehicleType):
         id = "house2arm"
@@ -1101,6 +1120,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class Outpost_road(unittype.VehicleType):
         id = "outpost_road"
@@ -1109,6 +1129,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class Outpost(unittype.VehicleType):
         id = "outpost"
@@ -1117,6 +1138,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class HouseA_arm(unittype.VehicleType):
         id = "houseA_arm"
@@ -1125,6 +1147,7 @@ class Fortification:
         threat_range = 800
         air_weapon_dist = 800
         movable = False
+        theoretically_movable = False
 
     class TACAN_beacon(unittype.VehicleType):
         id = "TACAN_beacon"
@@ -1133,6 +1156,7 @@ class Fortification:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class SK_C_28_naval_gun(unittype.VehicleType):
         id = "SK_C_28_naval_gun"
@@ -1141,6 +1165,7 @@ class Fortification:
         threat_range = 20000
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
     class Fire_control(unittype.VehicleType):
         id = "fire_control"
@@ -1149,7 +1174,7 @@ class Fortification:
         threat_range = 1100
         air_weapon_dist = 1100
         movable = False
-
+        theoretically_movable = False
 
 class Unarmed:
 
@@ -2050,6 +2075,7 @@ class MissilesSS:
         threat_range = 0
         air_weapon_dist = 0
         movable = False
+        theoretically_movable = False
 
 class Locomotive:
 
