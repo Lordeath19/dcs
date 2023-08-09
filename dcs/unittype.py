@@ -27,6 +27,8 @@ class VehicleType(UnitType):
     detection_range = 0
     threat_range = 0
     air_weapon_dist = 0
+    movable = True
+    theoretically_movable = movable
 
 
 class ShipType(UnitType):
