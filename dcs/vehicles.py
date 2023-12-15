@@ -672,6 +672,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 120000
         air_weapon_dist = 120000
+        munition_interceptor = True
         theoretically_movable = True
 
     class S_300PS_5P85D_ln(unittype.VehicleType):
@@ -680,6 +681,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 120000
         air_weapon_dist = 120000
+        munition_interceptor = True
         theoretically_movable = True
 
     class S_300PS_54K6_cp(unittype.VehicleType):
@@ -696,6 +698,7 @@ class AirDefence:
         detection_range = 160000
         threat_range = 0
         air_weapon_dist = 0
+        munition_interceptor = True
         theoretically_movable = True
 
     class S_300PS_64H6E_sr(unittype.VehicleType):
@@ -720,6 +723,7 @@ class AirDefence:
         detection_range = 120000
         threat_range = 0
         air_weapon_dist = 0
+        munition_interceptor = True
         theoretically_movable = True
 
     class S_300PS_40B6MD_sr(unittype.VehicleType):
