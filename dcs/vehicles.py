@@ -258,13 +258,6 @@ class Infantry:
         air_weapon_dist = 0
         eplrs = True
 
-    class Infantry_Animated(unittype.VehicleType):
-        id = "Infantry Animated"
-        name = "Infantry"
-        detection_range = 0
-        threat_range = 500
-        air_weapon_dist = 500
-
     class Soldier_mauser98(unittype.VehicleType):
         id = "soldier_mauser98"
         name = "Infantry Mauser 98"
@@ -310,28 +303,7 @@ class AirDefence:
         detection_range = 0
         threat_range = 18000
         air_weapon_dist = 18000
-        movable = False
         theoretically_movable = False
-
-    class S_300PS_5P85C_ln(unittype.VehicleType):
-        id = "S-300PS 5P85C ln"
-        name = "SAM SA-10 S-300 \"Grumble\" TEL D"
-        detection_range = 0
-        threat_range = 120000
-        air_weapon_dist = 120000
-        munition_interceptor = True
-        movable = False
-        theoretically_movable = True
-
-    class S_300PS_5P85D_ln(unittype.VehicleType):
-        id = "S-300PS 5P85D ln"
-        name = "SAM SA-10 S-300 \"Grumble\" TEL C"
-        detection_range = 0
-        threat_range = 120000
-        air_weapon_dist = 120000
-        munition_interceptor = True
-        movable = False
-        theoretically_movable = True
 
     class SA_11_Buk_LN_9A310M1(unittype.VehicleType):
         id = "SA-11 Buk LN 9A310M1"
@@ -375,7 +347,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Patriot_AMG(unittype.VehicleType):
@@ -384,7 +355,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Patriot_ECS(unittype.VehicleType):
@@ -394,7 +364,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         eplrs = True
-        movable = False
         theoretically_movable = True
 
     class Gepard(unittype.VehicleType):
@@ -410,7 +379,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Vulcan(unittype.VehicleType):
@@ -427,7 +395,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 45000
         air_weapon_dist = 45000
-        movable = False
         theoretically_movable = True
 
     class M48_Chaparral(unittype.VehicleType):
@@ -453,7 +420,6 @@ class AirDefence:
         threat_range = 100000
         air_weapon_dist = 100000
         munition_interceptor = True
-        movable = False
         theoretically_movable = True
 
     class M1097_Avenger(unittype.VehicleType):
@@ -470,7 +436,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Patriot_cp(unittype.VehicleType):
@@ -479,7 +444,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Roland_ADS(unittype.VehicleType):
@@ -488,15 +452,6 @@ class AirDefence:
         detection_range = 12000
         threat_range = 8000
         air_weapon_dist = 8000
-
-    class S_300PS_54K6_cp(unittype.VehicleType):
-        id = "S-300PS 54K6 cp"
-        name = "SAM SA-10 S-300 \"Grumble\" C2 "
-        detection_range = 0
-        threat_range = 0
-        air_weapon_dist = 0
-        movable = False
-        theoretically_movable = True
 
     class Soldier_stinger(unittype.VehicleType):
         id = "Soldier stinger"
@@ -532,7 +487,6 @@ class AirDefence:
         detection_range = 5000
         threat_range = 2500
         air_weapon_dist = 2500
-        movable = False
         theoretically_movable = False
 
     class ZU_23_Emplacement(unittype.VehicleType):
@@ -555,7 +509,6 @@ class AirDefence:
         detection_range = 5000
         threat_range = 2500
         air_weapon_dist = 2500
-        movable = False
         theoretically_movable = False
 
     class Ural_375_ZU_23_Insurgent(unittype.VehicleType):
@@ -613,7 +566,6 @@ class AirDefence:
         detection_range = 300000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Kub_1S91_str(unittype.VehicleType):
@@ -622,26 +574,6 @@ class AirDefence:
         detection_range = 70000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
-        theoretically_movable = True
-
-    class S_300PS_40B6M_tr(unittype.VehicleType):
-        id = "S-300PS 40B6M tr"
-        name = "SAM SA-10 S-300 \"Grumble\" Flap Lid TR "
-        detection_range = 160000
-        threat_range = 0
-        air_weapon_dist = 0
-        munition_interceptor = True
-        movable = False
-        theoretically_movable = True
-
-    class S_300PS_40B6MD_sr(unittype.VehicleType):
-        id = "S-300PS 40B6MD sr"
-        name = "SAM SA-10 S-300PS Low Alt SR 5N66M"
-        detection_range = 60000
-        threat_range = 0
-        air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class X_55G6_EWR(unittype.VehicleType):
@@ -650,16 +582,6 @@ class AirDefence:
         detection_range = 400000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
-        theoretically_movable = True
-
-    class S_300PS_64H6E_sr(unittype.VehicleType):
-        id = "S-300PS 64H6E sr"
-        name = "SAM SA-10 S-300 \"Grumble\" Big Bird SR "
-        detection_range = 160000
-        threat_range = 0
-        air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class SA_11_Buk_SR_9S18M1(unittype.VehicleType):
@@ -668,7 +590,6 @@ class AirDefence:
         detection_range = 100000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Dog_Ear_radar(unittype.VehicleType):
@@ -684,7 +605,6 @@ class AirDefence:
         detection_range = 90000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Hawk_sr(unittype.VehicleType):
@@ -694,7 +614,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         eplrs = True
-        movable = False
         theoretically_movable = True
 
     class Patriot_str(unittype.VehicleType):
@@ -704,7 +623,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         munition_interceptor = True
-        movable = False
         theoretically_movable = True
 
     class Hawk_cwar(unittype.VehicleType):
@@ -714,7 +632,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         eplrs = True
-        movable = False
         theoretically_movable = True
 
     class P_19_s_125_sr(unittype.VehicleType):
@@ -723,7 +640,6 @@ class AirDefence:
         detection_range = 160000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Roland_Radar(unittype.VehicleType):
@@ -732,7 +648,6 @@ class AirDefence:
         detection_range = 35000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Snr_s_125_tr(unittype.VehicleType):
@@ -741,7 +656,78 @@ class AirDefence:
         detection_range = 100000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
+        theoretically_movable = True
+
+    class HEMTT_C_RAM_Phalanx(unittype.VehicleType):
+        id = "HEMTT_C-RAM_Phalanx"
+        name = "LPWS C-RAM"
+        detection_range = 10000
+        threat_range = 2000
+        air_weapon_dist = 2000
+        eplrs = True
+
+    class S_300PS_5P85C_ln(unittype.VehicleType):
+        id = "S-300PS 5P85C ln"
+        name = "SAM SA-10 S-300 \"Grumble\" TEL C"
+        detection_range = 0
+        threat_range = 120000
+        air_weapon_dist = 120000
+        theoretically_movable = True
+
+    class S_300PS_5P85D_ln(unittype.VehicleType):
+        id = "S-300PS 5P85D ln"
+        name = "SAM SA-10 S-300 \"Grumble\" TEL D"
+        detection_range = 0
+        threat_range = 120000
+        air_weapon_dist = 120000
+        theoretically_movable = True
+
+    class S_300PS_54K6_cp(unittype.VehicleType):
+        id = "S-300PS 54K6 cp"
+        name = "SAM SA-10 S-300 \"Grumble\" C2"
+        detection_range = 0
+        threat_range = 0
+        air_weapon_dist = 0
+        theoretically_movable = True
+
+    class S_300PS_40B6M_tr(unittype.VehicleType):
+        id = "S-300PS 40B6M tr"
+        name = "SAM SA-10 S-300 \"Grumble\" Flap Lid-A TR"
+        detection_range = 160000
+        threat_range = 0
+        air_weapon_dist = 0
+        theoretically_movable = True
+
+    class S_300PS_64H6E_sr(unittype.VehicleType):
+        id = "S-300PS 64H6E sr"
+        name = "SAM SA-10 S-300 \"Grumble\" Big Bird SR"
+        detection_range = 160000
+        threat_range = 0
+        air_weapon_dist = 0
+        theoretically_movable = True
+
+    class S_300PS_40B6MD_sr_19J6(unittype.VehicleType):
+        id = "S-300PS 40B6MD sr_19J6"
+        name = "SAM SA-10 S-300 \"Grumble\" Tin Shield SR"
+        detection_range = 150000
+        threat_range = 0
+        air_weapon_dist = 0
+        theoretically_movable = True
+
+    class S_300PS_5H63C_30H6_tr(unittype.VehicleType):
+        id = "S-300PS 5H63C 30H6_tr"
+        name = "SAM SA-10 S-300 \"Grumble\" Flap Lid-B TR"
+        detection_range = 120000
+        threat_range = 0
+        air_weapon_dist = 0
+        theoretically_movable = True
+
+    class S_300PS_40B6MD_sr(unittype.VehicleType):
+        id = "S-300PS 40B6MD sr"
+        name = "SAM SA-10 S-300 \"Grumble\" Clam Shell SR"
+        detection_range = 60000
+        threat_range = 0
+        air_weapon_dist = 0
         theoretically_movable = True
 
     class KS_19(unittype.VehicleType):
@@ -757,7 +743,6 @@ class AirDefence:
         detection_range = 55000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class HL_ZU_23(unittype.VehicleType):
@@ -781,7 +766,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         eplrs = True
-        movable = False
         theoretically_movable = False
 
     class NASAMS_Command_Post(unittype.VehicleType):
@@ -791,7 +775,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         eplrs = True
-        movable = False
         theoretically_movable = False
 
     class NASAMS_LN_B(unittype.VehicleType):
@@ -800,7 +783,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 15000
         air_weapon_dist = 15000
-        movable = False
         theoretically_movable = False
 
     class NASAMS_LN_C(unittype.VehicleType):
@@ -809,7 +791,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 15000
         air_weapon_dist = 15000
-        movable = False
         theoretically_movable = False
 
     class FPS_117_Dome(unittype.VehicleType):
@@ -818,7 +799,6 @@ class AirDefence:
         detection_range = 400000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class FPS_117_ECS(unittype.VehicleType):
@@ -828,7 +808,6 @@ class AirDefence:
         threat_range = 0
         air_weapon_dist = 0
         eplrs = True
-        movable = False
         theoretically_movable = False
 
     class FPS_117(unittype.VehicleType):
@@ -837,7 +816,6 @@ class AirDefence:
         detection_range = 463000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class RD_75(unittype.VehicleType):
@@ -846,7 +824,6 @@ class AirDefence:
         detection_range = 100000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class S_75M_Volhov(unittype.VehicleType):
@@ -855,7 +832,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 43000
         air_weapon_dist = 43000
-        movable = False
         theoretically_movable = False
 
     class SNR_75V(unittype.VehicleType):
@@ -864,7 +840,6 @@ class AirDefence:
         detection_range = 100000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class RLS_19J6(unittype.VehicleType):
@@ -873,7 +848,6 @@ class AirDefence:
         detection_range = 150000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class RPC_5N62V(unittype.VehicleType):
@@ -882,7 +856,6 @@ class AirDefence:
         detection_range = 400000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class S_200_Launcher(unittype.VehicleType):
@@ -891,7 +864,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 255000
         air_weapon_dist = 255000
-        movable = False
         theoretically_movable = False
 
     class ZSU_57_2(unittype.VehicleType):
@@ -914,7 +886,6 @@ class AirDefence:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Rapier_fsa_launcher(unittype.VehicleType):
@@ -923,7 +894,6 @@ class AirDefence:
         detection_range = 30000
         threat_range = 6800
         air_weapon_dist = 6800
-        movable = False
         theoretically_movable = False
 
     class Rapier_fsa_optical_tracker_unit(unittype.VehicleType):
@@ -932,7 +902,6 @@ class AirDefence:
         detection_range = 20000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class Rapier_fsa_blindfire_radar(unittype.VehicleType):
@@ -941,7 +910,6 @@ class AirDefence:
         detection_range = 30000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class Bofors40(unittype.VehicleType):
@@ -964,7 +932,6 @@ class AirDefence:
         detection_range = 15000
         threat_range = 15000
         air_weapon_dist = 15000
-        movable = False
         theoretically_movable = True
 
     class HQ_7_LN_EO(unittype.VehicleType):
@@ -973,7 +940,6 @@ class AirDefence:
         detection_range = 8000
         threat_range = 12000
         air_weapon_dist = 12000
-        movable = False
         theoretically_movable = True
 
     class HQ_7_STR_SP(unittype.VehicleType):
@@ -982,7 +948,6 @@ class AirDefence:
         detection_range = 30000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class Flak30(unittype.VehicleType):
@@ -1092,7 +1057,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class Sandbox(unittype.VehicleType):
@@ -1101,7 +1065,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class House1arm(unittype.VehicleType):
@@ -1110,7 +1073,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class House2arm(unittype.VehicleType):
@@ -1119,7 +1081,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class Outpost_road(unittype.VehicleType):
@@ -1128,7 +1089,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class Outpost(unittype.VehicleType):
@@ -1137,7 +1097,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class HouseA_arm(unittype.VehicleType):
@@ -1146,7 +1105,6 @@ class Fortification:
         detection_range = 0
         threat_range = 800
         air_weapon_dist = 800
-        movable = False
         theoretically_movable = False
 
     class TACAN_beacon(unittype.VehicleType):
@@ -1155,7 +1113,6 @@ class Fortification:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class SK_C_28_naval_gun(unittype.VehicleType):
@@ -1164,7 +1121,6 @@ class Fortification:
         detection_range = 0
         threat_range = 20000
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
     class Fire_control(unittype.VehicleType):
@@ -1173,7 +1129,6 @@ class Fortification:
         detection_range = 0
         threat_range = 1100
         air_weapon_dist = 1100
-        movable = False
         theoretically_movable = False
 
 class Unarmed:
@@ -1572,7 +1527,7 @@ class Armor:
         name = "IFV BMP-3"
         detection_range = 0
         threat_range = 4000
-        air_weapon_dist = 2000
+        air_weapon_dist = 1000
 
     class BRDM_2(unittype.VehicleType):
         id = "BRDM-2"
@@ -2047,8 +2002,8 @@ class MissilesSS:
         id = "Scud_B"
         name = "SSM SS-1C Scud-B"
         detection_range = 0
-        threat_range = 320000
-        air_weapon_dist = 320000
+        threat_range = 285000
+        air_weapon_dist = 285000
 
     class Hy_launcher(unittype.VehicleType):
         id = "hy_launcher"
@@ -2056,7 +2011,6 @@ class MissilesSS:
         detection_range = 100000
         threat_range = 100000
         air_weapon_dist = 100000
-        movable = False
         theoretically_movable = True
 
     class Silkworm_SR(unittype.VehicleType):
@@ -2065,7 +2019,6 @@ class MissilesSS:
         detection_range = 200000
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = True
 
     class V1_launcher(unittype.VehicleType):
@@ -2074,7 +2027,6 @@ class MissilesSS:
         detection_range = 0
         threat_range = 0
         air_weapon_dist = 0
-        movable = False
         theoretically_movable = False
 
 class Locomotive:
@@ -2244,8 +2196,6 @@ vehicle_map = {
     "2S6 Tunguska": AirDefence.X_2S6_Tunguska,
     "Kub 2P25 ln": AirDefence.Kub_2P25_ln,
     "5p73 s-125 ln": AirDefence.X_5p73_s_125_ln,
-    "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
-    "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,
     "SA-11 Buk LN 9A310M1": AirDefence.SA_11_Buk_LN_9A310M1,
     "Osa 9A33 ln": AirDefence.Osa_9A33_ln,
     "Tor 9A331": AirDefence.Tor_9A331,
@@ -2265,7 +2215,6 @@ vehicle_map = {
     "Patriot EPP": AirDefence.Patriot_EPP,
     "Patriot cp": AirDefence.Patriot_cp,
     "Roland ADS": AirDefence.Roland_ADS,
-    "S-300PS 54K6 cp": AirDefence.S_300PS_54K6_cp,
     "Soldier stinger": AirDefence.Soldier_stinger,
     "Stinger comm dsr": AirDefence.Stinger_comm_dsr,
     "Stinger comm": AirDefence.Stinger_comm,
@@ -2283,10 +2232,7 @@ vehicle_map = {
     "Igla manpad INS": AirDefence.Igla_manpad_INS,
     "1L13 EWR": AirDefence.X_1L13_EWR,
     "Kub 1S91 str": AirDefence.Kub_1S91_str,
-    "S-300PS 40B6M tr": AirDefence.S_300PS_40B6M_tr,
-    "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
     "55G6 EWR": AirDefence.X_55G6_EWR,
-    "S-300PS 64H6E sr": AirDefence.S_300PS_64H6E_sr,
     "SA-11 Buk SR 9S18M1": AirDefence.SA_11_Buk_SR_9S18M1,
     "Dog Ear radar": AirDefence.Dog_Ear_radar,
     "Hawk tr": AirDefence.Hawk_tr,
@@ -2346,7 +2292,15 @@ vehicle_map = {
     "ZIL-4331": Unarmed.ZIL_4331,
     "KrAZ6322": Unarmed.KrAZ6322,
     "JTAC": Infantry.JTAC,
-    "Infantry Animated": Infantry.Infantry_Animated,
+    "HEMTT_C-RAM_Phalanx": AirDefence.HEMTT_C_RAM_Phalanx,
+    "S-300PS 5P85C ln": AirDefence.S_300PS_5P85C_ln,
+    "S-300PS 5P85D ln": AirDefence.S_300PS_5P85D_ln,
+    "S-300PS 54K6 cp": AirDefence.S_300PS_54K6_cp,
+    "S-300PS 40B6M tr": AirDefence.S_300PS_40B6M_tr,
+    "S-300PS 64H6E sr": AirDefence.S_300PS_64H6E_sr,
+    "S-300PS 40B6MD sr_19J6": AirDefence.S_300PS_40B6MD_sr_19J6,
+    "S-300PS 5H63C 30H6_tr": AirDefence.S_300PS_5H63C_30H6_tr,
+    "S-300PS 40B6MD sr": AirDefence.S_300PS_40B6MD_sr,
     "Electric locomotive": Locomotive.Electric_locomotive,
     "Locomotive": Locomotive.Locomotive,
     "Coach cargo": Carriage.Coach_cargo,
