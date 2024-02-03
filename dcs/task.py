@@ -9,7 +9,7 @@ Also options and commands are task actions.
 """
 from typing import List, Dict, Optional, Type, Any, Union
 from enum import Enum, IntEnum
-from dcs.mapping import Vector2
+from dcs.mapping import Vector2, Vector3
 from dcs.unit import Unit
 
 
@@ -71,6 +71,11 @@ class Task:
             "params": self.params,
             "number": self.number
         }
+
+    def __eq__(self, other: Any) -> bool:
+        if not isinstance(other, Task):
+            return False
+        return self.dict() == other.dict()
 
 
 class ControlledTask(Task):
@@ -157,8 +162,8 @@ class ControlledTask(Task):
         self.params["stopCondition"]["duration"] = duration
 
 
-class WeaponType(Enum):
-    Auto = 1073741822
+class WeaponType(IntEnum):
+    Auto = 9663676414
     NoWeapon = 0
     All = 4294967295
     Unguided = 805339120
@@ -317,6 +322,13 @@ class Expend(Enum):
     Quarter = "Quarter"
     Half = "Half"
     All = "All"
+
+    def __eq__(self, other: Any) -> bool:
+        if isinstance(other, str):
+            return self.value == other
+        if isinstance(other, Expend):
+            return self.value == other.value
+        return False
 
 
 class AttackGroup(Task):
@@ -531,7 +543,7 @@ class EscortTaskAction(Task):
             "targetTypes": {i: targets[i - 1] for i in range(1, len(targets) + 1)},
             "pos": position
         }
-        if group_id:
+        if group_id is not None:
             self.params["groupId"] = group_id
         if lastwpt:
             self.params["lastWptIndexFlagChangedManually"] = True
@@ -1027,6 +1039,83 @@ class GoToWaypoint(Task):
             self.params["nWaypointIndx"] = to_index
 
 
+class WWIIFollowBigFormation(Task):
+    Id = "FollowBigFormation"
+
+    class FormationType(IntEnum):
+        COMBAT_BOX_FOR_OPEN_FORMATION = 18
+        JAVELIN_DOWN = 16
+        COMBAT_BOX = 15
+
+    def __init__(self,
+                 group_id: Optional[int] = None,
+                 position: Vector3 = Vector3(0, 0, 0),
+                 last_wpt_index_flag: bool = False,
+                 last_wpt_index_flag_changed_manually: bool = False,
+                 formation_type: FormationType = FormationType.COMBAT_BOX_FOR_OPEN_FORMATION,
+                 pos_in_box: int = 0,
+                 pos_in_group: int = 0,
+                 pos_in_wing: int = 0,
+                 last_wpt_index: Optional[int] = None) -> None:
+        super().__init__(self.Id)
+
+        self.params = {
+            "pos": {
+                "x": position.x,
+                "y": position.y,
+                "z": position.z
+            },
+            "lastWptIndexFlag": last_wpt_index_flag,
+            "lastWptIndexFlagChangedManually": last_wpt_index_flag_changed_manually,
+            "lastWptIndex": last_wpt_index,
+            "formationType": formation_type,
+            "posInBox": pos_in_box,
+            "posInGroup": pos_in_group,
+            "posInWing": pos_in_wing
+        }
+        if group_id is not None:
+            self.params["groupId"] = group_id
+        if last_wpt_index:
+            self.params["lastWptIndex"] = last_wpt_index
+
+    def __eq__(self, other) -> bool:
+        if isinstance(other, self.__class__):
+            return self.__dict__ == other.__dict__
+        return False
+
+
+class CarpetBombing(Task):
+    """Create Carpet Bombing Task object
+
+    :param alt_above: AGL altitude (in meters) from which bombing is to be performed. Defaults to 2000.
+    :param pattern_length: The pattern length (in meters) of the carpet bombing run. Defaults to 500.
+    :param release_qty: How many weapons to release. Defaults to Expend.Auto. See :py:class:`dcs.task.Expend`
+    :param weapon_type: The weapon to be used. Defaults to WeaponType.Auto. See :py:class:`dcs.task.WeaponType`
+    """
+    Id = "CarpetBombing"
+    DEFAULT_ALT: int = 2000
+
+    def __init__(self, alt_above: int = DEFAULT_ALT,
+                 pattern_length: int = 500,
+                 release_qty: Expend = Expend.Auto,
+                 weapon_type: WeaponType = WeaponType.Auto) -> None:
+        super().__init__(self.Id)
+        # hardcoded parameters are present in .miz file, but not visible in Mission Editor
+        self.params = {
+            "altitude": alt_above,
+            "altitudeEnabled": True if alt_above != CarpetBombing.DEFAULT_ALT else False,
+            "attackQty": 1,
+            "attackQtyLimit": False,
+            "attackType": "Carpet",
+            "carpetLength": pattern_length,
+            "expend": release_qty.value,
+            "groupAttack": False,
+            "weaponType": weapon_type.value,
+            "x": -52946.816024994,
+            "y": -52425.804462374,
+        }
+
+
 tasks_map: Dict[str, Type[Task]] = {
     ControlledTask.Id: ControlledTask,
     EscortTaskAction.Id: EscortTaskAction,
@@ -1058,7 +1147,9 @@ tasks_map: Dict[str, Type[Task]] = {
     FireAtPoint.Id: FireAtPoint,
     AttackUnit.Id: AttackUnit,
     AttackMapObject.Id: AttackMapObject,
-    EngageTargets.Id: EngageTargets
+    EngageTargets.Id: EngageTargets,
+    WWIIFollowBigFormation.Id: WWIIFollowBigFormation,
+    CarpetBombing.Id: CarpetBombing,
 }
 
 

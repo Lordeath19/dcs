@@ -1,5 +1,5 @@
 import sys
-from typing import Dict, Union, List, TYPE_CHECKING
+from typing import Dict, Union, List, TYPE_CHECKING, Optional
 import dcs.countries as countries
 from dcs.mapping import Point
 import dcs.unitgroup as unitgroup
@@ -11,6 +11,7 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.point import MovingPoint, StaticPoint
 from dcs.country import Country
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.unitgroup import Group
 
 if TYPE_CHECKING:
     from . import Mission
@@ -89,7 +90,7 @@ class Coalition:
         else:
             return name
 
-    def load_from_dict(self, mission, d) -> List[StatusMessage]:
+    def load_from_dict(self, mission, d, countries_in_coalition: Dict[int, int]) -> List[StatusMessage]:
         status: List[StatusMessage] = []
         for country_idx in d["country"]:
             imp_country = d["country"][country_idx]
@@ -256,6 +257,13 @@ class Coalition:
                         static_group.add_unit(static)
                     _country.add_static_group(static_group)
             self.add_country(_country)
+
+        # iterate over all .miz countries in coalition, even without any units
+        # on the map, and add them to the respective coalition
+        for country_id in countries_in_coalition.values():
+            if self.country_by_id(country_id) is None:
+                self.add_country(countries.get_by_id(country_id))
+
         return status
 
     def set_bullseye(self, bulls):
@@ -285,6 +293,14 @@ class Coalition:
         for c in self.countries:
             g = self.countries[c].find_group(group_name, search)
             if g:
+                return g
+
+        return None
+
+    def find_group_by_id(self, group_id: int) -> Optional[Group]:
+        for c in self.countries:
+            g = self.countries[c].find_group_by_id(group_id)
+            if g is not None:
                 return g
 
         return None

@@ -42,6 +42,7 @@ from dcs.flyingunit import Plane, Helicopter
 from dcs.helicopters import HelicopterType
 from dcs.planes import PlaneType
 from dcs.status_message import StatusMessage, MessageType, MessageSeverity
+from dcs.unitgroup import Group
 
 
 class StartType(Enum):
@@ -105,6 +106,7 @@ class Mission:
         self.current_group_id = 0
         self.current_dict_id = 0
         self.filename: Optional[str] = None
+        self.tmpdir: Optional[str] = None
 
         self.translation = Translation(self)
         self.map_resource = MapResource(self)
@@ -115,6 +117,7 @@ class Mission:
         self._sortie = self.string("")
         self.pictureFileNameR: List[Union[ResourceKey, str]] = []
         self.pictureFileNameB: List[Union[ResourceKey, str]] = []
+        self.pictureFileNameN: List[Union[ResourceKey, str]] = []
         self.version = Mission._CURRENT_MIZ_VERSION
         self.currentKey = 0
         self.start_time = datetime.fromtimestamp(1306886400 + 43200, timezone.utc)  # 01-06-2011 12:00:00 UTC
@@ -132,6 +135,7 @@ class Mission:
         self.warehouses = Warehouses(self.terrain)
         self.goals = Goals()
         self.drawings = Drawings(self.terrain)
+        self.required_modules = None
         blue = Coalition("blue")
         blue.add_country(countries.Australia())
         blue.add_country(countries.Belgium())
@@ -232,6 +236,7 @@ class Mission:
         self.current_unit_id = 0
         self.current_group_id = 0
         self.current_dict_id = 0
+        self.tmpdir = tempfile.mkdtemp()
         status = []
 
         def loaddict(fname: str, mizfile: zipfile.ZipFile, reserved_files: List[str]) -> Dict[str, Any]:
@@ -259,6 +264,9 @@ class Mission:
             self.map_resource.load_binary_files(miz, reserved_files)
 
         imp_mission = mission_dict["mission"]
+
+        # required modules
+        self.required_modules = imp_mission.get("requiredModules", {})
 
         # import translations
         self.translation = Translation(self)
@@ -309,6 +317,9 @@ class Mission:
             self.pictureFileNameR.append(imp_mission["pictureFileNameR"][pic])
         for pic in sorted(imp_mission["pictureFileNameB"]):
             self.pictureFileNameB.append(imp_mission["pictureFileNameB"][pic])
+        if "pictureFileNameN" in imp_mission:
+            for pic in sorted(imp_mission["pictureFileNameN"]):
+                self.pictureFileNameN.append(imp_mission["pictureFileNameN"][pic])
         self.version = imp_mission["version"]
         self.currentKey = imp_mission["currentKey"]
         imp_date = imp_mission.get("date", {"Year": 2011, "Month": 6, "Day": 1})
@@ -343,6 +354,13 @@ class Mission:
         self.init_script_file = imp_mission.get("initScriptFile")
         self.init_script = imp_mission.get("initScript")
 
+        # import coalition with countries and units
+        for col_name in ["blue", "red", "neutrals"]:
+            if col_name in imp_mission["coalition"]:
+                self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
+                status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name],
+                                                                  imp_mission["coalitions"][col_name])
+
         # triggers
         self.bypassed_triggers = None
         self.bypassed_trigrules = None
@@ -372,12 +390,6 @@ class Mission:
         imp_weather = imp_mission["weather"]
         self.weather = weather.Weather(self.terrain)
         self.weather.load_from_dict(imp_weather)
-
-        # import coalition with countries and units
-        for col_name in ["blue", "red", "neutrals"]:
-            if col_name in imp_mission["coalition"]:
-                self.coalition[col_name] = Coalition(col_name, imp_mission["coalition"][col_name]["bullseye"])
-                status += self.coalition[col_name].load_from_dict(self, imp_mission["coalition"][col_name])
 
         return status
 
@@ -469,6 +481,19 @@ class Mission:
         """
         reskey = self.map_resource.add_resource_file(filepath)
         self.pictureFileNameB.append(reskey)
+        return reskey
+
+    def add_picture_neutral(self, filepath: str) -> ResourceKey:
+        """Adds a new briefing picture to the neutral coalition.
+
+        Args:
+            filepath: path to the image, jpg or bmp.
+
+        Returns:
+            the resource key of the picture
+        """
+        reskey = self.map_resource.add_resource_file(filepath)
+        self.pictureFileNameN.append(reskey)
         return reskey
 
     def next_group_id(self):
@@ -1804,6 +1829,21 @@ class Mission:
                 return g
         return None
 
+    def find_group_by_id(self, group_id: int) -> Optional[Group]:
+        """Searches a group with the given groupId
+
+        Args:
+            group_id: group identifier assigned by the mission file
+
+        Returns:
+            Group: the group found, otherwise None
+        """
+        for k in self.coalition:
+            g = self.coalition[k].find_group_by_id(group_id)
+            if g is not None:
+                return g
+        return None
+
     def is_red(self, country: Country) -> bool:
         """Checks if the given country object is part o the red coalition.
 
@@ -2006,6 +2046,7 @@ class Mission:
             "Month": self.start_time.month,
             "Day": self.start_time.day
         }
+        m["requiredModules"] = {} if self.required_modules is None else self.required_modules
         if self.random_weather:
             self.weather.random(self.start_time, self.terrain)
         m["groundControl"] = self.groundControl.dict()
@@ -2031,6 +2072,9 @@ class Mission:
         m["pictureFileNameB"] = {}
         for i in range(0, len(self.pictureFileNameB)):
             m["pictureFileNameB"][i + 1] = str(self.pictureFileNameB[i])
+        m["pictureFileNameN"] = {}
+        for i in range(0, len(self.pictureFileNameN)):
+            m["pictureFileNameN"][i + 1] = str(self.pictureFileNameN[i])
         m["descriptionBlueTask"] = self._description_bluetask.id
         m["descriptionRedTask"] = self._description_redtask.id
         if self.init_script_file is not None:
@@ -2046,7 +2090,7 @@ class Mission:
         col_blue = list(col_blue)
         col_red = list(col_red)
         m["coalitions"] = {
-            "neutral": {x + 1: col_neutral[x] for x in range(0, len(col_neutral))},
+            "neutrals": {x + 1: col_neutral[x] for x in range(0, len(col_neutral))},
             "blue": {x + 1: col_blue[x] for x in range(0, len(col_blue))},
             "red": {x + 1: col_red[x] for x in range(0, len(col_red))}
         }
@@ -2086,14 +2130,13 @@ class MapResource:
 
     def load_from_dict(self, _dict, zipf: zipfile.ZipFile, lang='DEFAULT'):
         _dict = _dict["mapResource"]
-
         for key in _dict:
             filename = _dict[key]
             filepath = 'l10n/{lang}/{fn}'.format(lang=lang, fn=filename)
             self.added_paths.append(filepath)
 
             try:
-                extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+                extractedpath = zipf.extract(filepath, self.mission.tmpdir)
                 self.add_resource_file(extractedpath, lang, key)
             except KeyError as ke:
                 print(ke, file=sys.stderr)
@@ -2104,7 +2147,7 @@ class MapResource:
                 continue
 
             try:
-                extractedpath = zipf.extract(filepath, tempfile.gettempdir())
+                extractedpath = zipf.extract(filepath, self.mission.tmpdir)
                 self.binary_files.append({
                     "path": os.path.abspath(extractedpath),
                     "respath": filepath,
@@ -2146,7 +2189,10 @@ class MapResource:
         :param lang:
         :return:
         """
-        return self.files[lang][resource_key.key][len(tempfile.gettempdir()) + len('/l10n//') + len(lang):]
+        if self.mission.tmpdir is None:
+            raise RuntimeError("get_file_path() only works for loaded missions.")
+
+        return self.files[lang][resource_key.key][len(self.mission.tmpdir) + len('/l10n//') + len(lang):]
 
     def store(self, zipf: zipfile.ZipFile, lang='DEFAULT'):
         d = {}
